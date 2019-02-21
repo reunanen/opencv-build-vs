@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\png.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngerror.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngget.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngmem.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngpread.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngread.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngrio.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngrtran.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngrutil.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngset.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngtrans.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngwio.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngwrite.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngwtran.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngwutil.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\intel\intel_init.c" />
+    <ClCompile Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\intel\filter_sse2_intrinsics.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\png.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngconf.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngdebug.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pnginfo.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pnglibconf.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngpriv.h" />
+    <ClInclude Include="$(ProjectDir)..\..\..\opencv\3rdparty\libpng\pngstruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9F217451-7268-3A66-AB58-B2065D3BF1FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{23B77A29-48C1-37EF-9A48-93BA79B2F626}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
