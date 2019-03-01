@@ -180,9 +180,12 @@
     <ClInclude Include="opencv\modules\core\src\mathfuncs.hpp" />
     <ClInclude Include="opencv\modules\core\src\mathfuncs_core.simd.hpp" />
     <ClInclude Include="opencv\modules\core\src\matmul.simd.hpp" />
+    <ClInclude Include="opencv\modules\core\src\mean.simd.hpp" />
+    <ClInclude Include="opencv\modules\core\src\merge.simd.hpp" />
     <ClInclude Include="opencv\modules\core\src\ocl_deprecated.hpp" />
     <ClInclude Include="opencv\modules\core\src\persistence.hpp" />
     <ClInclude Include="opencv\modules\core\src\precomp.hpp" />
+    <ClInclude Include="opencv\modules\core\src\split.simd.hpp" />
     <ClInclude Include="opencv\modules\core\src\stat.hpp" />
     <ClInclude Include="opencv\modules\core\src\stat.simd.hpp" />
     <ClInclude Include="opencv\modules\core\src\sum.simd.hpp" />
@@ -954,8 +957,8 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcphuff.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100;4244</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcprepct.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
@@ -1044,8 +1047,8 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdmarker.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100;4244</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdmaster.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
@@ -1298,6 +1301,8 @@
     <ClCompile Include="opencv\3rdparty\libtiff\tif_jpeg.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100;4324</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100;4324</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libtiff\tif_jpeg_12.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
@@ -2422,20 +2427,18 @@
     <ClCompile Include="opencv\3rdparty\openexr\IlmThread\IlmThreadSemaphoreWin32.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)vs\3rdparty\openexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)vs\3rdparty\openexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4706</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4706</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4189;4267;4706</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4189;4267;4706</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\openexr\IlmThread\IlmThreadWin32.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)vs\3rdparty\openexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)vs\3rdparty\openexr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267;4706</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267;4706</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4189;4267;4706</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4189;4267;4706</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\openexr\Imath\ImathColorAlgo.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\openexr\Imath\ImathFun.cpp">
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4245</DisableSpecificWarnings>
@@ -2621,11 +2624,8 @@
     <ClCompile Include="opencv\modules\core\src\matrix_operations.cpp" />
     <ClCompile Include="opencv\modules\core\src\matrix_sparse.cpp" />
     <ClCompile Include="opencv\modules\core\src\matrix_wrap.cpp" />
-    <ClCompile Include="opencv\modules\core\src\mean.cpp" />
-    <ClCompile Include="opencv\modules\core\src\merge.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/__/core/src/merge.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/__/core/src/merge.cpp.obj</ObjectFileName>
-    </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\mean.dispatch.cpp" />
+    <ClCompile Include="opencv\modules\core\src\merge.dispatch.cpp" />
     <ClCompile Include="opencv\modules\core\src\minmax.cpp" />
     <ClCompile Include="opencv\modules\core\src\norm.cpp" />
     <ClCompile Include="opencv\modules\core\src\ocl.cpp" />
@@ -2641,7 +2641,7 @@
     <ClCompile Include="opencv\modules\core\src\persistence_yml.cpp" />
     <ClCompile Include="opencv\modules\core\src\rand.cpp" />
     <ClCompile Include="opencv\modules\core\src\softfloat.cpp" />
-    <ClCompile Include="opencv\modules\core\src\split.cpp" />
+    <ClCompile Include="opencv\modules\core\src\split.dispatch.cpp" />
     <ClCompile Include="opencv\modules\core\src\stat.dispatch.cpp" />
     <ClCompile Include="opencv\modules\core\src\stat_c.cpp" />
     <ClCompile Include="opencv\modules\core\src\sum.dispatch.cpp" />
@@ -2847,7 +2847,6 @@
     <ClCompile Include="opencv\modules\video\src\bgfg_KNN.cpp" />
     <ClCompile Include="opencv\modules\video\src\camshift.cpp" />
     <ClCompile Include="opencv\modules\video\src\dis_flow.cpp" />
-    <ClCompile Include="opencv\modules\video\src\ecc.cpp" />
     <ClCompile Include="opencv\modules\video\src\kalman.cpp" />
     <ClCompile Include="opencv\modules\video\src\lkpyramid.cpp" />
     <ClCompile Include="opencv\modules\video\src\optflowgf.cpp" />
@@ -3023,6 +3022,18 @@
     <ClCompile Include="vs\modules\core\mathfuncs_core.avx.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CV_CPU_DISPATCH_MODE=AVX;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CV_CPU_DISPATCH_MODE=AVX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\mean.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CV_CPU_DISPATCH_MODE=AVX2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CV_CPU_DISPATCH_MODE=AVX2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\merge.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CV_CPU_DISPATCH_MODE=AVX2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CV_CPU_DISPATCH_MODE=AVX2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\split.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CV_CPU_DISPATCH_MODE=AVX2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CV_CPU_DISPATCH_MODE=AVX2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ClCompile Include="vs\modules\core\stat.sse4_2.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CV_CPU_DISPATCH_MODE=SSE4_2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>

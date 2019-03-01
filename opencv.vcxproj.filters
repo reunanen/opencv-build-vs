@@ -939,6 +939,15 @@
     <ClInclude Include="opencv\modules\video\include\opencv2\video\background_segm.hpp">
       <Filter>opencv\opencv_video\Include</Filter>
     </ClInclude>
+    <ClInclude Include="opencv\modules\core\src\mean.simd.hpp">
+      <Filter>opencv\opencv_core\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="opencv\modules\core\src\split.simd.hpp">
+      <Filter>opencv\opencv_core\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="opencv\modules\core\src\merge.simd.hpp">
+      <Filter>opencv\opencv_core\Src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vs\3rdparty\ippicv\ippicv_win\iw\src\iw_core.c">
@@ -1193,12 +1202,6 @@
     <ClCompile Include="opencv\modules\core\src\matrix_wrap.cpp">
       <Filter>opencv\opencv_core\Src</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\modules\core\src\mean.cpp">
-      <Filter>opencv\opencv_core\Src</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\core\src\merge.cpp">
-      <Filter>opencv\opencv_core\Src</Filter>
-    </ClCompile>
     <ClCompile Include="opencv\modules\core\src\minmax.cpp">
       <Filter>opencv\opencv_core\Src</Filter>
     </ClCompile>
@@ -1242,9 +1245,6 @@
       <Filter>opencv\opencv_core\Src</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\softfloat.cpp">
-      <Filter>opencv\opencv_core\Src</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\core\src\split.cpp">
       <Filter>opencv\opencv_core\Src</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\stat.dispatch.cpp">
@@ -1632,9 +1632,6 @@
       <Filter>opencv\opencv_video\Src</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\video\src\dis_flow.cpp">
-      <Filter>opencv\opencv_video\Src</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\video\src\ecc.cpp">
       <Filter>opencv\opencv_video\Src</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\video\src\kalman.cpp">
@@ -2719,6 +2716,24 @@
     </ClCompile>
     <ClCompile Include="vs\modules\core\stat.sse4_2.cpp">
       <Filter>opencv\opt\SSE4.2</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\mean.dispatch.cpp">
+      <Filter>opencv\opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\split.dispatch.cpp">
+      <Filter>opencv\opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\merge.dispatch.cpp">
+      <Filter>opencv\opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\merge.avx2.cpp">
+      <Filter>opencv\opt\AVX2</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\split.avx2.cpp">
+      <Filter>opencv\opt\AVX2</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\mean.avx2.cpp">
+      <Filter>opencv\opt\AVX2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
