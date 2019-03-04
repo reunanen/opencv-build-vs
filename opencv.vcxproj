@@ -70,7 +70,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>xcopy $(ProjectDir)vs\3rdparty\libjpeg-turbo\objects\simd.pdb $(OutDir)</Command>
+      <Command>xcopy /d $(ProjectDir)vs\3rdparty\libjpeg-turbo\objects\simd.pdb $(OutDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -101,7 +101,7 @@
       <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib</AdditionalDependencies>
     </Lib>
     <PostBuildEvent>
-      <Command>xcopy $(ProjectDir)vs\3rdparty\libjpeg-turbo\objects\simd.pdb $(OutDir)</Command>
+      <Command>xcopy /d $(ProjectDir)vs\3rdparty\libjpeg-turbo\objects\simd.pdb $(OutDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
