@@ -69,6 +69,9 @@
       <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
     </Lib>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)vs\3rdparty\libjpeg-turbo\objects\simd.pdb $(OutDir)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -97,6 +100,9 @@
       <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
       <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib</AdditionalDependencies>
     </Lib>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)vs\3rdparty\libjpeg-turbo\objects\simd.pdb $(OutDir)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="opencv\3rdparty\libwebp\src\webp\decode.h" />
