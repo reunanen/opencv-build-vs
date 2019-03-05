@@ -44,7 +44,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)vs;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)opencv\3rdparty\openexr\Half;$(ProjectDir)opencv\3rdparty\openexr\Iex;$(ProjectDir)opencv\3rdparty\openexr\IlmThread;$(ProjectDir)opencv\3rdparty\openexr\Imath;$(ProjectDir)opencv\3rdparty\openexr\IlmImf;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)vs\modules\world;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\gapi\include;$(ProjectDir)opencv\modules\gapi\src;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\world\include;$(ProjectDir)vs\3rdparty\ade\ade-0.1.1d\sources\ade\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -59,7 +58,6 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -76,7 +74,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)vs;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)opencv\3rdparty\openexr\Half;$(ProjectDir)opencv\3rdparty\openexr\Iex;$(ProjectDir)opencv\3rdparty\openexr\IlmThread;$(ProjectDir)opencv\3rdparty\openexr\Imath;$(ProjectDir)opencv\3rdparty\openexr\IlmImf;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)vs\modules\world;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\gapi\include;$(ProjectDir)opencv\modules\gapi\src;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\world\include;$(ProjectDir)vs\3rdparty\ade\ade-0.1.1d\sources\ade\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
@@ -89,7 +86,6 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
