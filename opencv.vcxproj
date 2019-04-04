@@ -2792,7 +2792,10 @@
     <ClCompile Include="opencv\modules\imgproc\src\linefit.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\lsd.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\matchcontours.cpp" />
-    <ClCompile Include="opencv\modules\imgproc\src\median_blur.cpp" />
+    <ClCompile Include="opencv\modules\imgproc\src\median_blur.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4127;4244</DisableSpecificWarnings>
+    </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\min_enclosing_triangle.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\moments.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\morph.cpp" />
