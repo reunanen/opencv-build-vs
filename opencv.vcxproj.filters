@@ -2855,9 +2855,6 @@
     <ClCompile Include="opencv\modules\features2d\src\draw.cpp">
       <Filter>opencv\opencv_features2d\Src</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\modules\features2d\src\dynamic.cpp">
-      <Filter>opencv\opencv_features2d\Src</Filter>
-    </ClCompile>
     <ClCompile Include="opencv\modules\features2d\src\evaluation.cpp">
       <Filter>opencv\opencv_features2d\Src</Filter>
     </ClCompile>

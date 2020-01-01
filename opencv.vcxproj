@@ -2699,7 +2699,6 @@
     <ClCompile Include="opencv\modules\features2d\src\blobdetector.cpp" />
     <ClCompile Include="opencv\modules\features2d\src\brisk.cpp" />
     <ClCompile Include="opencv\modules\features2d\src\draw.cpp" />
-    <ClCompile Include="opencv\modules\features2d\src\dynamic.cpp" />
     <ClCompile Include="opencv\modules\features2d\src\evaluation.cpp" />
     <ClCompile Include="opencv\modules\features2d\src\fast.avx2.cpp" />
     <ClCompile Include="opencv\modules\features2d\src\fast.cpp" />
