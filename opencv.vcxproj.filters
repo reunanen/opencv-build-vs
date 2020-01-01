@@ -202,6 +202,18 @@
     <Filter Include="3rdparty\libjpeg-turbo\x86_64\objects">
       <UniqueIdentifier>{e61ba7ec-e07a-431b-9628-2f91187d2355}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opencv\opencv_calib3d">
+      <UniqueIdentifier>{07023408-1040-4cdd-a213-3231bdcb0bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_features2d">
+      <UniqueIdentifier>{5bf27644-6630-4b2d-bc94-9fad48110316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_calib3d\Src">
+      <UniqueIdentifier>{a5f05a97-5e8c-462d-9a20-e27b71a16f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_features2d\Src">
+      <UniqueIdentifier>{65d6b04f-35f6-4b56-ac6c-bce5d1b229ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vs\3rdparty\ippicv\ippicv_win\iw\include\iw_config.h">
@@ -2740,6 +2752,144 @@
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\x86_64\jsimd.c">
       <Filter>3rdparty\libjpeg-turbo\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\ap3p.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\calibinit.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\calibration.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\checkchessboard.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\chessboard.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\circlesgrid.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\compat_ptsetreg.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\dls.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\epnp.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\fisheye.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\five-point.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\fundam.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\homography_decomp.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\levmarq.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\p3p.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\polynom_solver.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\posit.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\ptsetreg.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\quadsubpix.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\rho.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\solvepnp.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\stereobm.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\stereosgbm.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\triangulate.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\undistort.avx2.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\undistort.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\upnp.cpp">
+      <Filter>opencv\opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\agast.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\agast_score.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\akaze.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\bagofwords.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\blobdetector.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\brisk.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\draw.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\dynamic.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\evaluation.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\fast.avx2.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\fast.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\fast_score.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\feature2d.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\gftt.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\kaze.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\keypoint.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\matchers.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\mser.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\features2d\src\orb.cpp">
+      <Filter>opencv\opencv_features2d\Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

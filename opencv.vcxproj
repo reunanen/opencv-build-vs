@@ -2584,6 +2584,33 @@
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level3</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Level3</WarningLevel>
     </ClCompile>
+    <ClCompile Include="opencv\modules\calib3d\src\ap3p.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\calibinit.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\calibration.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\checkchessboard.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\chessboard.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\circlesgrid.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\compat_ptsetreg.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\dls.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\epnp.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\fisheye.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\five-point.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\fundam.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\homography_decomp.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\levmarq.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\p3p.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\polynom_solver.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\posit.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\ptsetreg.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\quadsubpix.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\rho.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\solvepnp.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\stereobm.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\stereosgbm.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\triangulate.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\undistort.avx2.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\undistort.cpp" />
+    <ClCompile Include="opencv\modules\calib3d\src\upnp.cpp" />
     <ClCompile Include="opencv\modules\core\src\algorithm.cpp" />
     <ClCompile Include="opencv\modules\core\src\alloc.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HAVE_MALLOC_H=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -2665,6 +2692,25 @@
     <ClCompile Include="opencv\modules\core\src\utils\filesystem.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\samples.cpp" />
     <ClCompile Include="opencv\modules\core\src\va_intel.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\agast.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\agast_score.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\akaze.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\bagofwords.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\blobdetector.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\brisk.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\draw.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\dynamic.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\evaluation.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\fast.avx2.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\fast.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\fast_score.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\feature2d.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\gftt.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\kaze.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\keypoint.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\matchers.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\mser.cpp" />
+    <ClCompile Include="opencv\modules\features2d\src\orb.cpp" />
     <ClCompile Include="opencv\modules\flann\src\flann.cpp" />
     <ClCompile Include="opencv\modules\flann\src\miniflann.cpp" />
     <ClCompile Include="opencv\modules\gapi\src\api\gapi_priv.cpp" />
