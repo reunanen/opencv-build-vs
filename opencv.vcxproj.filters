@@ -2891,6 +2891,9 @@
     <ClCompile Include="opencv\modules\features2d\src\orb.cpp">
       <Filter>opencv\opencv_features2d\Src</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\modules\videoio\src\backend.cpp">
+      <Filter>opencv\opencv_videoio\Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Object Include="vs\3rdparty\libjpeg-turbo\objects\jccolor-avx2.asm.obj">
