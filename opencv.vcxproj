@@ -20,7 +20,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
@@ -59,7 +59,7 @@
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;_DEBUG;CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <Lib>
@@ -67,6 +67,9 @@
       <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
     </Lib>
+    <Link>
+      <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib;advapi32.lib;comdlg32.lib;gdi32.lib</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -2847,6 +2850,7 @@
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning.cpp" />
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning_impl.cpp" />
     <ClCompile Include="opencv\modules\photo\src\tonemap.cpp" />
+    <ClCompile Include="opencv\modules\videoio\src\backend.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap_dshow.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap_ffmpeg.cpp" />
@@ -2867,6 +2871,26 @@
     <ClCompile Include="opencv\modules\video\src\optical_flow_io.cpp" />
     <ClCompile Include="opencv\modules\video\src\variational_refinement.cpp" />
     <ClCompile Include="opencv\modules\world\src\world_init.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\alloc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)ade-alloc.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)ade-alloc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\assert.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\check_cycles.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\edge.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\execution_engine.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\graph.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_accessor.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_descriptor.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_descriptor_ref.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_descriptor_view.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\metadata.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\metatypes.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\node.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\passes\communications.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\search.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\subgraphs.cpp" />
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\topological_sort.cpp" />
     <ClCompile Include="vs\3rdparty\ippicv\ippicv_win\iw\src\iw_core.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
