@@ -202,6 +202,12 @@
     <Filter Include="3rdparty\libjpeg-turbo\x86_64\objects">
       <UniqueIdentifier>{e61ba7ec-e07a-431b-9628-2f91187d2355}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rdparty\ade">
+      <UniqueIdentifier>{ed9ab09c-0378-4c30-8f3c-c4722a9b3427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\ade\passes">
+      <UniqueIdentifier>{5433d81e-7004-4d7b-aed5-5eedd1d219b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vs\3rdparty\ippicv\ippicv_win\iw\include\iw_config.h">
@@ -2740,6 +2746,60 @@
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\x86_64\jsimd.c">
       <Filter>3rdparty\libjpeg-turbo\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\assert.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\check_cycles.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\edge.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\execution_engine.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\graph.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_accessor.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_descriptor.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_descriptor_ref.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\memory_descriptor_view.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\metadata.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\metatypes.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\node.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\search.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\subgraphs.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\topological_sort.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\passes\communications.cpp">
+      <Filter>3rdparty\ade\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\ade\ade-0.1.1d\sources\ade\source\alloc.cpp">
+      <Filter>3rdparty\ade</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\videoio\src\backend.cpp">
+      <Filter>opencv\opencv_videoio\Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
