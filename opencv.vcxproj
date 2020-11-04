@@ -20,7 +20,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
@@ -58,7 +58,7 @@
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_WIN32UI;CVAPI_EXPORTS;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Lib>
@@ -66,6 +66,9 @@
       <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
     </Lib>
+    <Link>
+      <AdditionalDependencies>$(ProjectDir)vs/3rdparty/ippicv/ippicv_win/icv/lib/intel64/ippicvmt.lib;advapi32.lib;comdlg32.lib;gdi32.lib;user32.lib</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
