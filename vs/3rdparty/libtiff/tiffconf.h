@@ -76,7 +76,7 @@
 /* #undef OJPEG_SUPPORT */
 
 /* Support Macintosh PackBits algorithm */
-/* #undef PACKBITS_SUPPORT */
+#define PACKBITS_SUPPORT 1
 
 /* Support Pixar log-format algorithm (requires Zlib) */
 /* #undef PIXARLOG_SUPPORT */
