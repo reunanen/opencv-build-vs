@@ -1,5 +1,5 @@
 /* 
-// Copyright 2001-2018 Intel Corporation All Rights Reserved.
+// Copyright 2001-2019 Intel Corporation All Rights Reserved.
 // 
 // The source code, information and material ("Material") contained herein is
 // owned by Intel Corporation or its suppliers or licensors, and title
@@ -32,10 +32,10 @@
 #if !defined( IPPVERSION_H__ )
 #define IPPVERSION_H__
 
-#define IPP_VERSION_MAJOR  2019
+#define IPP_VERSION_MAJOR  2020
 #define IPP_VERSION_MINOR  0
 #define IPP_VERSION_UPDATE 0
 
-#define IPP_VERSION_STR "2019.0.0 Gold"
+#define IPP_VERSION_STR "2020.0.0 Gold"
 
 #endif /* IPPVERSION_H__ */
