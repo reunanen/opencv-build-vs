@@ -2844,6 +2844,7 @@
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning.cpp" />
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning_impl.cpp" />
     <ClCompile Include="opencv\modules\photo\src\tonemap.cpp" />
+    <ClCompile Include="opencv\modules\videoio\src\backend.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap_dshow.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap_ffmpeg.cpp" />

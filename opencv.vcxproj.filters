@@ -2198,6 +2198,9 @@
     <ClCompile Include="opencv\modules\world\src\world_init.cpp">
       <Filter>opencv\opencv_highgui\Src</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\modules\videoio\src\backend.cpp">
+      <Filter>opencv\opencv_videoio\Src</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\modules\videoio\src\cap_dshow.cpp">
       <Filter>opencv\opencv_videoio\Src</Filter>
     </ClCompile>
