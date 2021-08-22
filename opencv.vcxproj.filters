@@ -253,6 +253,69 @@
     <Filter Include="opencv\imgproc\dispatched">
       <UniqueIdentifier>{5d32d514-5c6a-4bf4-ae2a-06a35a825316}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opencv\dnn">
+      <UniqueIdentifier>{32f46005-7df5-44c9-a6c3-4916cbcf9d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src">
+      <UniqueIdentifier>{af33852b-7e91-4121-a6e6-b4eafb992d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\onnx">
+      <UniqueIdentifier>{e9057e4c-e10d-4236-8b1e-bc13ced1d1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\caffe">
+      <UniqueIdentifier>{7d6d9e90-ee14-4c86-9462-3a1103b197f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\protobuf">
+      <UniqueIdentifier>{4cf382bd-cc50-4eca-b1c0-697119fd67f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\protobuf\io">
+      <UniqueIdentifier>{5f4fed33-7af0-4588-afe3-8f0a376a752e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\protobuf\stubs">
+      <UniqueIdentifier>{7ca880bc-fb45-4706-8f95-37759438807d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\protobuf\util">
+      <UniqueIdentifier>{2a7540ac-410d-497d-b78e-1a3987ac1f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\protobuf\util\internal">
+      <UniqueIdentifier>{8896c752-9454-42d2-b7e9-f46fe6b6dfa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\misc">
+      <UniqueIdentifier>{3af1f850-385a-4d23-9748-c09486997fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\misc\onnx">
+      <UniqueIdentifier>{d0bcb4d0-cce5-4f43-982a-0312292ce61c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\misc\caffe">
+      <UniqueIdentifier>{17c2b041-39e3-4e2a-94fa-3d33a5fb9e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\layers">
+      <UniqueIdentifier>{0d64506d-0396-47cd-908b-85ac7391f6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\darknet">
+      <UniqueIdentifier>{67332321-d106-4d42-8d73-49175320a6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\tensorflow">
+      <UniqueIdentifier>{f6fe8633-d1d9-4b7f-8348-cd21fb84f7d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\int8layers">
+      <UniqueIdentifier>{ee1298c1-c54d-4218-b51b-2064593efad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\dispatched">
+      <UniqueIdentifier>{d2714579-1fa4-4544-9ebb-ff0ba3e3dbf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\dispatched\layers">
+      <UniqueIdentifier>{04c236d8-ef47-40f8-9030-20ac95142cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\dispatched\int8layers">
+      <UniqueIdentifier>{4d3fbe56-3b5e-43fe-b35b-f12d7f6b2669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\torch">
+      <UniqueIdentifier>{47927170-cca1-4d47-9386-072a93bb1129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\dnn\Src\misc\tensorflow">
+      <UniqueIdentifier>{5729892b-92a2-473b-a7e8-3400fa88d1f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv\3rdparty\openexr\Half\eLut.h">
@@ -4264,6 +4327,486 @@
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\arithm.dispatch.cpp">
       <Filter>opencv\core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\debug_utils.cpp">
+      <Filter>opencv\dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\dnn.cpp">
+      <Filter>opencv\dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\graph_simplifier.cpp">
+      <Filter>opencv\dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\init.cpp">
+      <Filter>opencv\dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\model.cpp">
+      <Filter>opencv\dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\nms.cpp">
+      <Filter>opencv\dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\api.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\arena.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\arenastring.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor_database.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\duration.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\dynamic_message.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\empty.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\extension_set.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\extension_set_heavy.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\field_mask.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_reflection.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_table_driven.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_table_driven_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_util.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\map_field.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\message.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\message_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\reflection_ops.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\repeated_field.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\service.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\source_context.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\struct.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\text_format.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\timestamp.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\type.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\unknown_field_set.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wire_format.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wire_format_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wrappers.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\coded_stream.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\gzip_stream.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\printer.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\strtod.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\tokenizer.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <Filter>3rdparty\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\delimited_message_util.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\field_comparator.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\field_mask_util.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\json_util.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\message_differencer.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\time_util.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\type_resolver_util.cc">
+      <Filter>3rdparty\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\bytestream.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\common.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\int128.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\io_win32.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\mathlimits.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\once.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\status.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\statusor.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\stringpiece.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\stringprintf.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\strutil.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\substitute.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\time.cc">
+      <Filter>3rdparty\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\datapiece.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\error_listener.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\json_escaping.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\object_writer.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\proto_writer.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\type_info.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\util\internal\utility.cc">
+      <Filter>3rdparty\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_graph_simplifier.cpp">
+      <Filter>opencv\dnn\Src\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_importer.cpp">
+      <Filter>opencv\dnn\Src\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_importer.cpp">
+      <Filter>opencv\dnn\Src\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_io.cpp">
+      <Filter>opencv\dnn\Src\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_shrinker.cpp">
+      <Filter>opencv\dnn\Src\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\onnx\opencv-onnx.pb.cc">
+      <Filter>opencv\dnn\Src\misc\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\caffe\opencv-caffe.pb.cc">
+      <Filter>opencv\dnn\Src\misc\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\accum_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\batch_norm_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\blank_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\concat_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\const_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\convolution_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\correlation_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\crop_and_resize_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cumsum_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\detection_output_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\elementwise_layers.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\eltwise_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\flatten_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\flow_warp_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\layers_common.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\lrn_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\max_unpooling_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\mvn_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\normalize_bbox_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\not_implemented_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\padding_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\permute_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\pooling_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\prior_box_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\proposal_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\recurrent_layers.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\region_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\reorg_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\reshape_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\resize_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\scale_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\shuffle_channel_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\slice_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\softmax_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\split_layer.cpp">
+      <Filter>opencv\dnn\Src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_halide.cpp">
+      <Filter>opencv\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_inf_engine.cpp">
+      <Filter>opencv\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_vkcom.cpp">
+      <Filter>opencv\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_importer.cpp">
+      <Filter>opencv\dnn\Src\darknet</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_io.cpp">
+      <Filter>opencv\dnn\Src\darknet</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp">
+      <Filter>opencv\dnn\Src\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_importer.cpp">
+      <Filter>opencv\dnn\Src\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_io.cpp">
+      <Filter>opencv\dnn\Src\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\quantize_dequantize_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\scale_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <Filter>opencv\dnn\Src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx.cpp">
+      <Filter>opencv\dnn\dispatched\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx2.cpp">
+      <Filter>opencv\dnn\dispatched\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx512_skx.cpp">
+      <Filter>opencv\dnn\dispatched\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\int8layers\layers_common.avx2.cpp">
+      <Filter>opencv\dnn\dispatched\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\int8layers\layers_common.avx512_skx.cpp">
+      <Filter>opencv\dnn\dispatched\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\THDiskFile.cpp">
+      <Filter>opencv\dnn\Src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\THFile.cpp">
+      <Filter>opencv\dnn\Src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\THGeneral.cpp">
+      <Filter>opencv\dnn\Src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\torch_importer.cpp">
+      <Filter>opencv\dnn\Src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\attr_value.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\function.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\graph.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\op_def.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\tensor.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\tensor_shape.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\types.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\versions.pb.cc">
+      <Filter>opencv\dnn\Src\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ie_ngraph.cpp">
+      <Filter>opencv\dnn\Src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
