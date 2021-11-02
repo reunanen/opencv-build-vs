@@ -2830,7 +2830,10 @@
     </ClCompile>
     <ClCompile Include="opencv\modules\photo\src\align.cpp" />
     <ClCompile Include="opencv\modules\photo\src\calibrate.cpp" />
-    <ClCompile Include="opencv\modules\photo\src\contrast_preserve.cpp" />
+    <ClCompile Include="opencv\modules\photo\src\contrast_preserve.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
     <ClCompile Include="opencv\modules\photo\src\denoise_tvl1.cpp" />
     <ClCompile Include="opencv\modules\photo\src\denoising.cpp" />
     <ClCompile Include="opencv\modules\photo\src\denoising.cuda.cpp" />
