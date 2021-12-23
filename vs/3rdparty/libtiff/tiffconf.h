@@ -47,7 +47,7 @@
 #define HAVE_IEEEFP 1
 
 /* Set the native cpu bit order (FILLORDER_LSB2MSB or FILLORDER_MSB2LSB) */
-#define HOST_FILLORDER FILLORDER_MSB2LSB
+#define HOST_FILLORDER FILLORDER_LSB2MSB
 
 /* Native cpu byte order: 1 if big-endian (Motorola) or 0 if little-endian
    (Intel) */
@@ -69,7 +69,7 @@
 #define LZW_SUPPORT 1
 
 /* Support NeXT 2-bit RLE algorithm */
-/* #undef NEXT_SUPPORT */
+#define NEXT_SUPPORT 1
 
 /* Support Old JPEG compresson (read contrib/ojpeg/README first! Compilation
    fails with unpatched IJG JPEG library) */
@@ -82,10 +82,13 @@
 /* #undef PIXARLOG_SUPPORT */
 
 /* Support ThunderScan 4-bit RLE algorithm */
-/* #undef THUNDER_SUPPORT */
+#define THUNDER_SUPPORT 1
 
 /* Support Deflate compression */
 #define ZIP_SUPPORT 1
+
+/* Support libdeflate enhanced compression */
+/* #undef LIBDEFLATE_SUPPORT */
 
 /* Support strip chopping (whether or not to convert single-strip uncompressed
    images to mutiple strips of ~8Kb to reduce memory usage) */
@@ -104,7 +107,7 @@
 #define CHECK_JPEG_YCBCR_SUBSAMPLING 1
 
 /* Support MS MDI magic number files as TIFF */
-/* #undef MDI_SUPPORT */
+#define MDI_SUPPORT 1
 
 /*
  * Feature support definitions.

@@ -2,13 +2,13 @@
 // It is subject to the license terms in the LICENSE file found in the top-level directory
 // of this distribution and at http://opencv.org/license.html.
 //
-// Copyright (C) 2018 Intel Corporation
+// Copyright (C) 2018-2019 Intel Corporation
 
 
 #ifndef OPENCV_GAPI_UTIL_HPP
 #define OPENCV_GAPI_UTIL_HPP
 
-#include <utility> // std::tuple
+#include <tuple>
 
 // \cond HIDDEN_SYMBOLS
 // This header file contains some generic utility functions which are
@@ -84,7 +84,105 @@ namespace detail
     {
         static constexpr const std::size_t value = S;
     };
+
+    template <typename...>
+    struct contains : std::false_type{};
+
+    template <typename T1, typename T2, typename... Ts>
+    struct contains<T1, T2, Ts...> : std::integral_constant<bool, std::is_same<T1, T2>::value ||
+                                                                  contains<T1, Ts...>::value> {};
+    template<typename T, typename... Types>
+    struct contains<T, std::tuple<Types...>> : std::integral_constant<bool, contains<T, Types...>::value> {};
+
+    template <typename...>
+    struct all_unique : std::true_type{};
+
+    template <typename T1, typename... Ts>
+    struct all_unique<T1, Ts...> : std::integral_constant<bool, !contains<T1, Ts...>::value &&
+                                                                 all_unique<Ts...>::value> {};
+
+    template<typename>
+    struct tuple_wrap_helper;
+
+    template<typename T> struct tuple_wrap_helper
+    {
+        using type = std::tuple<T>;
+        static type get(T&& obj) { return std::make_tuple(std::move(obj)); }
+    };
+
+    template<typename... Objs>
+    struct tuple_wrap_helper<std::tuple<Objs...>>
+    {
+        using type = std::tuple<Objs...>;
+        static type get(std::tuple<Objs...>&& objs) { return std::forward<std::tuple<Objs...>>(objs); }
+    };
+
+    template<typename... Ts>
+    struct make_void { typedef void type;};
+
+    template<typename... Ts>
+    using void_t = typename make_void<Ts...>::type;
+
 } // namespace detail
+
+namespace util
+{
+template<typename ...L>
+struct overload_lamba_set;
+
+template<typename L1>
+struct overload_lamba_set<L1> : public L1
+{
+    overload_lamba_set(L1&& lambda) : L1(std::move(lambda)) {}
+    overload_lamba_set(const L1& lambda) : L1(lambda) {}
+
+    using L1::operator();
+};
+
+template<typename L1, typename ...L>
+struct overload_lamba_set<L1, L...> : public L1, public overload_lamba_set<L...>
+{
+    using base_type = overload_lamba_set<L...>;
+    overload_lamba_set(L1 &&lambda1, L&& ...lambdas):
+        L1(std::move(lambda1)),
+        base_type(std::forward<L>(lambdas)...) {}
+
+    overload_lamba_set(const L1 &lambda1, L&& ...lambdas):
+        L1(lambda1),
+        base_type(std::forward<L>(lambdas)...) {}
+
+    using L1::operator();
+    using base_type::operator();
+};
+
+template<typename... L>
+overload_lamba_set<L...> overload_lambdas(L&& ...lambdas)
+{
+    return overload_lamba_set<L...>(std::forward<L>(lambdas)...);
+}
+
+template<typename ...T>
+struct find_adapter_impl;
+
+template<typename AdapterT, typename T>
+struct find_adapter_impl<AdapterT, T>
+{
+    using type = typename std::conditional<std::is_base_of<AdapterT, T>::value,
+                                           T,
+                                           void>::type;
+    static constexpr bool found = std::is_base_of<AdapterT, T>::value;
+};
+
+template<typename AdapterT, typename T, typename... Types>
+struct find_adapter_impl<AdapterT, T, Types...>
+{
+    using type = typename std::conditional<std::is_base_of<AdapterT, T>::value,
+                                           T,
+                                           typename find_adapter_impl<AdapterT, Types...>::type>::type;
+    static constexpr bool found = std::is_base_of<AdapterT, T>::value ||
+                                  find_adapter_impl<AdapterT, Types...>::found;
+};
+} // namespace util
 } // namespace cv
 
 // \endcond

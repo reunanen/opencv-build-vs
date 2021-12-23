@@ -1,5 +1,5 @@
 /* libjpeg-turbo build number */
-#define BUILD  "opencv-4.0.1-dev-libjpeg-turbo"
+#define BUILD  "opencv-4.5.4-dev-libjpeg-turbo"
 
 /* Compiler's inline keyword */
 #undef inline
@@ -15,11 +15,14 @@
 #endif
 #endif
 
+/* How to obtain thread-local storage */
+#define THREAD_LOCAL  
+
 /* Define to the full name of this package. */
-#define PACKAGE_NAME  "libjpeg-turbo"
+#define PACKAGE_NAME  "OpenCV"
 
 /* Version number of package */
-#define VERSION  "2.0.2"
+#define VERSION  "2.1.2"
 
 /* The size of `size_t', as computed by sizeof. */
 #define SIZEOF_SIZE_T  8
@@ -36,4 +39,14 @@
 #elif (SIZEOF_SIZE_T == 4)
 #define HAVE_BITSCANFORWARD
 #endif
+#endif
+
+#if defined(__has_attribute)
+#if __has_attribute(fallthrough)
+#define FALLTHROUGH  __attribute__((fallthrough));
+#else
+#define FALLTHROUGH
+#endif
+#else
+#define FALLTHROUGH
 #endif
