@@ -2594,8 +2594,8 @@
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\arithm.cpp" />
     <ClCompile Include="opencv\modules\core\src\arithm.dispatch.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4251;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4251;4275</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\array.cpp" />
     <ClCompile Include="opencv\modules\core\src\batch_distance.cpp" />
@@ -2796,8 +2796,8 @@
     <ClCompile Include="opencv\modules\imgproc\src\lsd.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\matchcontours.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\median_blur.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127;4244</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4127;4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127;4244;4251;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4127;4244;4251;4275</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\min_enclosing_triangle.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\moments.cpp" />
@@ -2834,8 +2834,8 @@
     <ClCompile Include="opencv\modules\photo\src\align.cpp" />
     <ClCompile Include="opencv\modules\photo\src\calibrate.cpp" />
     <ClCompile Include="opencv\modules\photo\src\contrast_preserve.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4251;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4251;4275</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\modules\photo\src\denoise_tvl1.cpp" />
     <ClCompile Include="opencv\modules\photo\src\denoising.cpp" />
