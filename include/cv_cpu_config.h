@@ -37,19 +37,23 @@
     , CV_CPU_SSE \
     , CV_CPU_SSE2 \
     , CV_CPU_SSE3 \
-    , CV_CPU_SSSE3 \
-    , CV_CPU_SSE4_1 \
-    , CV_CPU_POPCNT \
-    , CV_CPU_SSE4_2 \
-    , CV_CPU_FP16 \
-    , CV_CPU_FMA3 \
-    , CV_CPU_AVX \
-    , CV_CPU_AVX2 \
 
 
 // OpenCV supported CPU dispatched features
 
+#define CV_CPU_DISPATCH_COMPILE_SSE4_1 1
+#define CV_CPU_DISPATCH_COMPILE_SSE4_2 1
+#define CV_CPU_DISPATCH_COMPILE_FP16 1
+#define CV_CPU_DISPATCH_COMPILE_AVX 1
+#define CV_CPU_DISPATCH_COMPILE_AVX2 1
+#define CV_CPU_DISPATCH_COMPILE_AVX512_SKX 1
 
 
 #define CV_CPU_DISPATCH_FEATURES 0 \
+    , CV_CPU_SSE4_1 \
+    , CV_CPU_SSE4_2 \
+    , CV_CPU_FP16 \
+    , CV_CPU_AVX \
+    , CV_CPU_AVX2 \
+    , CV_CPU_AVX512_SKX \
 

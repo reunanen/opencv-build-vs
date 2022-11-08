@@ -22,9 +22,6 @@
     <Filter Include="opencv\opencv_flann">
       <UniqueIdentifier>{dff4a924-d126-4fac-b3d1-a72b5d06977e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="opencv\opencv_gapi">
-      <UniqueIdentifier>{b4d35f88-7f2a-4b3e-be17-756cedcd5060}</UniqueIdentifier>
-    </Filter>
     <Filter Include="opencv\opencv_imgproc">
       <UniqueIdentifier>{d3a20854-dca4-47d7-95f8-c16e1246187c}</UniqueIdentifier>
     </Filter>
@@ -108,9 +105,6 @@
     </Filter>
     <Filter Include="opencv\opencv_video\opt">
       <UniqueIdentifier>{bdacc776-c12b-4e99-a7ed-a8c7eebfe9dc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="opencv\opencv_gapi\opt">
-      <UniqueIdentifier>{208bdaed-9142-4688-903a-53a0cd55048e}</UniqueIdentifier>
     </Filter>
     <Filter Include="opencv\opencv_core\parallel">
       <UniqueIdentifier>{671bc4c1-bc66-4f50-9978-dc83f9ff281c}</UniqueIdentifier>
@@ -229,9 +223,6 @@
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libpng\pngwutil.c">
       <Filter>3rdparty\libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp">
-      <Filter>opencv\opencv_core\utils</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\utils\filesystem.cpp">
       <Filter>opencv\opencv_core\utils</Filter>
@@ -1157,120 +1148,6 @@
     <ClCompile Include="opencv\modules\flann\src\miniflann.cpp">
       <Filter>opencv\opencv_flann</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\passes\dump_dot.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\passes\exec.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\garray.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gbackend.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gcall.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\gcompiled.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\gcompiler.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\common\gcompoundbackend.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\common\gcompoundkernel.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gcomputation.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\cpu\gcpubackend.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\cpu\gcpucore.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\cpu\gcpuimgproc.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\cpu\gcpukernel.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\executor\gexecutor.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\fluid\gfluidbackend.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\fluid\gfluidbuffer.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\fluid\gfluidcore.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\fluid\gfluidimgproc.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\gislandmodel.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gkernel.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gmat.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\gmodel.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\gmodelbuilder.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gnode.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\ocl\goclbackend.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\ocl\goclcore.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\ocl\goclimgproc.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\backends\ocl\goclkernel.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gproto.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\gscalar.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\passes\helpers.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\passes\islands.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\passes\kernels.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\kernels_core.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\kernels_imgproc.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\compiler\passes\meta.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
-    <ClCompile Include="opencv\modules\gapi\src\api\operators.cpp">
-      <Filter>opencv\opencv_gapi</Filter>
-    </ClCompile>
     <ClCompile Include="opencv\modules\highgui\src\roiSelector.cpp">
       <Filter>opencv\opencv_highgui</Filter>
     </ClCompile>
@@ -1676,29 +1553,11 @@
     <ClCompile Include="opencv\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.cpp">
       <Filter>opencv\opencv_imgcodecs\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="vs\modules\core\opencl_kernels_core.cpp">
-      <Filter>opencv\opencv_core\opt</Filter>
-    </ClCompile>
-    <ClCompile Include="vs\modules\photo\opencl_kernels_photo.cpp">
-      <Filter>opencv\opencv_photo\opt</Filter>
-    </ClCompile>
-    <ClCompile Include="vs\modules\video\opencl_kernels_video.cpp">
-      <Filter>opencv\opencv_video\opt</Filter>
-    </ClCompile>
-    <ClCompile Include="vs\modules\gapi\backends\fluid\gfluidcore_func.avx2.cpp">
-      <Filter>opencv\opencv_gapi\opt</Filter>
-    </ClCompile>
-    <ClCompile Include="vs\modules\gapi\backends\fluid\gfluidimgproc_func.avx2.cpp">
-      <Filter>opencv\opencv_gapi\opt</Filter>
-    </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\color_rgb.dispatch.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\color_yuv.dispatch.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
-    </ClCompile>
-    <ClCompile Include="vs\modules\imgproc\opencl_kernels_imgproc.cpp">
-      <Filter>opencv\opencv_imgproc\opt</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\utils\logtagconfigparser.cpp">
       <Filter>opencv\opencv_core\utils</Filter>
@@ -2168,12 +2027,6 @@
     <ClCompile Include="vs\modules\core\sum.sse2.cpp">
       <Filter>opencv\opencv_core\opt</Filter>
     </ClCompile>
-    <ClCompile Include="vs\modules\gapi\backends\fluid\gfluidcore_func.sse4_1.cpp">
-      <Filter>opencv\opencv_gapi\opt</Filter>
-    </ClCompile>
-    <ClCompile Include="vs\modules\gapi\backends\fluid\gfluidimgproc_func.sse4_1.cpp">
-      <Filter>opencv\opencv_gapi\opt</Filter>
-    </ClCompile>
     <ClCompile Include="vs\modules\imgproc\accum.avx.cpp">
       <Filter>opencv\opencv_imgproc\opt</Filter>
     </ClCompile>
@@ -2281,6 +2134,18 @@
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\imgwarp.sse4_1.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\core\opencl_kernels_core.cpp">
+      <Filter>opencv\opencv_core\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\imgproc\opencl_kernels_imgproc.cpp">
+      <Filter>opencv\opencv_imgproc\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\photo\opencl_kernels_photo.cpp">
+      <Filter>opencv\opencv_photo\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\video\opencl_kernels_video.cpp">
+      <Filter>opencv\opencv_video\opt</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
