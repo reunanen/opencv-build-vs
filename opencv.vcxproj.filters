@@ -112,6 +112,9 @@
     <Filter Include="3rdparty\openexr\OpenEXR">
       <UniqueIdentifier>{52d64168-b19e-48aa-8433-76246823d56a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rdparty\libjpeg-turbo\object files">
+      <UniqueIdentifier>{640d70d8-43ae-4ed5-ae0b-e7a4431d6f14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv\modules\imgcodecs\src\grfmt_base.hpp">
@@ -950,7 +953,7 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jutils.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jsimd_none.c">
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\i386\jsimd.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\algorithm.cpp">
@@ -2147,5 +2150,91 @@
     <ClCompile Include="vs\modules\video\opencl_kernels_video.cpp">
       <Filter>opencv\opencv_video\opt</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jccolor-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jccolor-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcgray-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcgray-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jchuff-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcphuff-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcsample-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcsample-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdcolor-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdcolor-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdmerge-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdmerge-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdsample-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdsample-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctflt-sse.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctfst-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctint-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctint-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctflt-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctfst-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctint-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctint-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctred-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquantf-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquanti-avx2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquanti-sse2.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimdcpu.asm.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimd.obj">
+      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
+    </Object>
   </ItemGroup>
 </Project>

@@ -58,7 +58,7 @@
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Lib>
@@ -83,7 +83,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
@@ -924,11 +924,9 @@
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100</DisableSpecificWarnings>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jsimd_none.c">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100</DisableSpecificWarnings>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\i386\jsimd.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4302;4311</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4302;4311</DisableSpecificWarnings>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jutils.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
@@ -2577,6 +2575,36 @@
     </ClCompile>
     <ClCompile Include="vs\modules\photo\opencl_kernels_photo.cpp" />
     <ClCompile Include="vs\modules\video\opencl_kernels_video.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jccolor-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jccolor-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcgray-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcgray-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jchuff-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcphuff-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcsample-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jcsample-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdcolor-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdcolor-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdmerge-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdmerge-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdsample-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jdsample-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctflt-sse.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctfst-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctint-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jfdctint-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctflt-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctfst-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctint-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctint-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jidctred-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquantf-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquanti-avx2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquanti-sse2.asm.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimd.obj" />
+    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimdcpu.asm.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
