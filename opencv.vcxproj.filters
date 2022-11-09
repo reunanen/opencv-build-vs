@@ -1299,9 +1299,6 @@
     <ClCompile Include="opencv\modules\imgproc\src\smooth.dispatch.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\modules\imgproc\src\spatialgradient.cpp">
-      <Filter>opencv\opencv_imgproc</Filter>
-    </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\subdivision2d.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>

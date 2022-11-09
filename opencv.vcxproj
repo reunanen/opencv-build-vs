@@ -2129,7 +2129,6 @@
     <ClCompile Include="opencv\modules\imgproc\src\segmentation.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\shapedescr.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\smooth.dispatch.cpp" />
-    <ClCompile Include="opencv\modules\imgproc\src\spatialgradient.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\subdivision2d.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\sumpixels.dispatch.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\tables.cpp">
