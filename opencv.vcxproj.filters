@@ -956,6 +956,7 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\i386\jsimd.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="src\init_libjpegturbo_simd.cpp" />
     <ClCompile Include="opencv\modules\core\src\algorithm.cpp">
       <Filter>opencv\opencv_core</Filter>
     </ClCompile>

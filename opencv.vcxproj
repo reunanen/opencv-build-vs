@@ -2177,6 +2177,7 @@
     <ClCompile Include="opencv\modules\video\src\optical_flow_io.cpp" />
     <ClCompile Include="opencv\modules\video\src\variational_refinement.cpp" />
     <ClCompile Include="opencv\modules\world\src\world_init.cpp" />
+    <ClCompile Include="src\init_libjpegturbo_simd.cpp" />
     <ClCompile Include="vs\3rdparty\ippicv\ippicv_win\iw\src\iw_core.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
