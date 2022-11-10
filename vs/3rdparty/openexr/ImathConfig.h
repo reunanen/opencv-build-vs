@@ -18,7 +18,7 @@
 // flags. It is also overrided by the IMATH_HALF_NO_LOOKUP_TABLE
 // macro, if defined.
 //
-/* #undef IMATH_HALF_USE_LOOKUP_TABLE */
+#define IMATH_HALF_USE_LOOKUP_TABLE
 
 //
 // Define if the target system has support for large
@@ -33,7 +33,7 @@
 // Current (internal) library namepace name and corresponding public
 // client namespaces.
 #define IMATH_INTERNAL_NAMESPACE_CUSTOM 0
-#define IMATH_INTERNAL_NAMESPACE Imath_opencv
+#define IMATH_INTERNAL_NAMESPACE Imath_opencv_build_vs
 
 
 #define IMATH_NAMESPACE_CUSTOM 0
@@ -43,20 +43,21 @@
 //
 // Version information
 //
-#define IMATH_VERSION_STRING "3.1.3"
-#define IMATH_PACKAGE_STRING "Imath 3.1.3"
+#define IMATH_VERSION_STRING "3.2.0"
+#define IMATH_PACKAGE_STRING "Imath 3.2.0-dev"
 
 #define IMATH_VERSION_MAJOR 3
-#define IMATH_VERSION_MINOR 1
-#define IMATH_VERSION_PATCH 3
-#define IMATH_VERSION_RELEASE_TYPE ""
+#define IMATH_VERSION_MINOR 2
+#define IMATH_VERSION_PATCH 0
+#define IMATH_VERSION_RELEASE_TYPE "-dev"
 
-#define IMATH_VERSION_HEX ((uint32_t(IMATH_VERSION_MAJOR) << 24) | \
-                             (uint32_t(IMATH_VERSION_MINOR) << 16) | \
-                             (uint32_t(IMATH_VERSION_PATCH) <<  8))
+#define IMATH_VERSION_HEX                                                      \
+    ((uint32_t (IMATH_VERSION_MAJOR) << 24) |                                  \
+     (uint32_t (IMATH_VERSION_MINOR) << 16) |                                  \
+     (uint32_t (IMATH_VERSION_PATCH) << 8))
 
 // IMATH_LIB_VERSION is the library API version: SOCURRENT.SOAGE.SOREVISION
-#define IMATH_LIB_VERSION_STRING ""
+#define IMATH_LIB_VERSION_STRING "29.0.0"
 
 //
 // Code that depends on the v2 ExcMath mechanism of signal handlers
@@ -67,11 +68,11 @@
 // behavior can build with the IMATH_USE_NOEXCEPT off.
 //
 
-#define IMATH_USE_NOEXCEPT 0
+#define IMATH_USE_NOEXCEPT 1
 #if IMATH_USE_NOEXCEPT
-#define IMATH_NOEXCEPT noexcept
+#    define IMATH_NOEXCEPT noexcept
 #else
-#define IMATH_NOEXCEPT
+#    define IMATH_NOEXCEPT
 #endif
 
 //
@@ -84,24 +85,22 @@
 // templates from compiling correctly.
 //
 #ifndef IMATH_FOREIGN_VECTOR_INTEROP
-#  if defined(__GNUC__) && __GNUC__ == 4 && !defined(__clang__)
-#    define IMATH_FOREIGN_VECTOR_INTEROP 0
-#  else
-#    define IMATH_FOREIGN_VECTOR_INTEROP 1
-#  endif
+#    if defined(__GNUC__) && __GNUC__ == 4 && !defined(__clang__)
+#        define IMATH_FOREIGN_VECTOR_INTEROP 0
+#    else
+#        define IMATH_FOREIGN_VECTOR_INTEROP 1
+#    endif
 #endif
-
 
 //
 // Decorator that makes a function available for both CPU and GPU, when
 // compiling for Cuda.
 //
 #ifdef __CUDACC__
-  #define IMATH_HOSTDEVICE __host__ __device__
+#    define IMATH_HOSTDEVICE __host__ __device__
 #else
-  #define IMATH_HOSTDEVICE
+#    define IMATH_HOSTDEVICE
 #endif
-
 
 //
 // Some compilers define a special intrinsic to use in conditionals that can
@@ -118,17 +117,17 @@
 //
 #if defined(__GNUC__) || defined(__clang__) || defined(__INTEL_COMPILER)
 #    ifdef __cplusplus
-#        define IMATH_LIKELY(x) (__builtin_expect(static_cast<bool>(x), true))
-#        define IMATH_UNLIKELY(x) (__builtin_expect(static_cast<bool>(x), false))
+#        define IMATH_LIKELY(x) (__builtin_expect (static_cast<bool> (x), true))
+#        define IMATH_UNLIKELY(x)                                              \
+            (__builtin_expect (static_cast<bool> (x), false))
 #    else
-#        define IMATH_LIKELY(x) (__builtin_expect((x), 1))
-#        define IMATH_UNLIKELY(x) (__builtin_expect((x), 0))
+#        define IMATH_LIKELY(x) (__builtin_expect ((x), 1))
+#        define IMATH_UNLIKELY(x) (__builtin_expect ((x), 0))
 #    endif
 #else
 #    define IMATH_LIKELY(x) (x)
 #    define IMATH_UNLIKELY(x) (x)
 #endif
-
 
 // On modern versions of gcc & clang, __has_attribute can test support for
 // __attribute__((attr)).  Make sure it's safe for other compilers.
@@ -136,36 +135,38 @@
 #    define __has_attribute(x) 0
 #endif
 
-
 //
 // Simple way to mark things as deprecated.
 // When we are sure that C++14 is our true minimum, then we can just
 // directly use [[deprecated(msg)]].
 //
 #if defined(_MSC_VER)
-# define IMATH_DEPRECATED(msg) __declspec(deprecated(msg))
+#    define IMATH_DEPRECATED(msg) __declspec(deprecated (msg))
 #elif defined(__cplusplus) && __cplusplus >= 201402L
-# define IMATH_DEPRECATED(msg) [[deprecated(msg)]]
+#    define IMATH_DEPRECATED(msg) [[deprecated (msg)]]
 #elif defined(__GNUC__) || defined(__clang__)
-# define IMATH_DEPRECATED(msg) __attribute__((deprecated(msg)))
+#    define IMATH_DEPRECATED(msg) __attribute__ ((deprecated (msg)))
 #else
-# define IMATH_DEPRECATED(msg) /* unsupported on this platform */
+#    define IMATH_DEPRECATED(msg) /* unsupported on this platform */
 #endif
 
 // Whether the user configured the library to have symbol visibility
 // tagged
-/* #undef IMATH_ENABLE_API_VISIBILITY */
+#define IMATH_ENABLE_API_VISIBILITY
 
 // MSVC does not do the same visibility attributes, and when we are
 // compiling a static library we won't be in DLL mode, but just don't
 // define these and the export headers will work out
-#if ! defined(_MSC_VER) && defined(IMATH_ENABLE_API_VISIBILITY)
-#  define IMATH_PUBLIC_SYMBOL_ATTRIBUTE __attribute__ ((__visibility__ ("default")))
-#  define IMATH_PRIVATE_SYMBOL_ATTRIBUTE __attribute__ ((__visibility__ ("hidden")))
+#if !defined(_MSC_VER) && defined(IMATH_ENABLE_API_VISIBILITY)
+#    define IMATH_PUBLIC_SYMBOL_ATTRIBUTE                                      \
+        __attribute__ ((__visibility__ ("default")))
+#    define IMATH_PRIVATE_SYMBOL_ATTRIBUTE                                     \
+        __attribute__ ((__visibility__ ("hidden")))
 // clang differs from gcc and has type visibility which is needed for enums and templates
-#  if __has_attribute(__type_visibility__)
-#    define IMATH_PUBLIC_TYPE_VISIBILITY_ATTRIBUTE __attribute__ ((__type_visibility__ ("default")))
-#  endif
+#    if __has_attribute(__type_visibility__)
+#        define IMATH_PUBLIC_TYPE_VISIBILITY_ATTRIBUTE                         \
+            __attribute__ ((__type_visibility__ ("default")))
+#    endif
 #endif
 
 #endif // INCLUDED_IMATH_CONFIG_H

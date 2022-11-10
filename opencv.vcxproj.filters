@@ -1572,319 +1572,319 @@
     <ClCompile Include="opencv\modules\core\src\parallel\parallel_openmp.cpp">
       <Filter>opencv\opencv_core\parallel</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Iex\IexBaseExc.cpp">
+    <ClCompile Include="openexr\src\lib\Iex\IexBaseExc.cpp">
       <Filter>3rdparty\openexr\Iex</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Iex\IexMathFloatExc.cpp">
+    <ClCompile Include="openexr\src\lib\Iex\IexMathFloatExc.cpp">
       <Filter>3rdparty\openexr\Iex</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Iex\IexMathFpu.cpp">
+    <ClCompile Include="openexr\src\lib\Iex\IexMathFpu.cpp">
       <Filter>3rdparty\openexr\Iex</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Iex\IexThrowErrnoExc.cpp">
+    <ClCompile Include="openexr\src\lib\Iex\IexThrowErrnoExc.cpp">
       <Filter>3rdparty\openexr\Iex</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfAcesFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfAcesFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfB44Compressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfB44Compressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfBoxAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfBoxAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfChannelList.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfChannelList.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfChannelListAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfChannelListAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfChromaticities.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfChromaticities.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfChromaticitiesAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfChromaticitiesAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfCompositeDeepScanLine.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfCompositeDeepScanLine.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfCompressionAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfCompressionAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfCompressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfCompressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfConvert.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfConvert.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfCRgbaFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfCRgbaFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepCompositing.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepCompositing.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepFrameBuffer.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepFrameBuffer.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepImageStateAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepImageStateAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepScanLineInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepScanLineInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepScanLineInputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepScanLineInputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepScanLineOutputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepScanLineOutputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepScanLineOutputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepScanLineOutputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepTiledInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepTiledInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepTiledInputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepTiledInputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepTiledOutputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepTiledOutputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDeepTiledOutputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDeepTiledOutputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDoubleAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDoubleAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfDwaCompressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfDwaCompressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfEnvmap.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfEnvmap.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfEnvmapAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfEnvmapAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfFastHuf.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfFastHuf.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfFloatAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfFloatAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfFloatVectorAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfFloatVectorAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfFrameBuffer.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfFrameBuffer.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfFramesPerSecond.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfFramesPerSecond.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfGenericInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfGenericInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfGenericOutputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfGenericOutputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfHeader.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfHeader.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfHuf.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfHuf.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfIDManifest.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfIDManifest.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfIDManifestAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfIDManifestAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfInputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfInputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfInputPartData.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfInputPartData.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfIntAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfIntAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfIO.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfIO.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfKeyCode.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfKeyCode.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfKeyCodeAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfKeyCodeAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfLineOrderAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfLineOrderAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfLut.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfLut.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfMatrixAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfMatrixAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfMisc.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfMisc.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfMultiPartInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfMultiPartInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfMultiPartOutputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfMultiPartOutputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfMultiView.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfMultiView.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfOpaqueAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfOpaqueAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfOutputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfOutputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfOutputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfOutputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfOutputPartData.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfOutputPartData.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfPartType.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfPartType.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfPizCompressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfPizCompressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfPreviewImage.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfPreviewImage.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfPreviewImageAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfPreviewImageAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfPxr24Compressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfPxr24Compressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfRational.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfRational.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfRationalAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfRationalAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfRgbaFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfRgbaFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfRgbaYca.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfRgbaYca.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfRle.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfRle.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfRleCompressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfRleCompressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfScanLineInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfScanLineInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfStandardAttributes.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfStandardAttributes.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfStdIO.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfStdIO.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfStringAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfStringAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfStringVectorAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfStringVectorAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfSystemSpecific.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfSystemSpecific.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTestFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTestFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfThreading.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfThreading.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTileDescriptionAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTileDescriptionAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTiledInputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTiledInputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTiledInputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTiledInputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTiledMisc.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTiledMisc.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTiledOutputFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTiledOutputFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTiledOutputPart.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTiledOutputPart.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTiledRgbaFile.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTiledRgbaFile.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTileOffsets.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTileOffsets.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTimeCode.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTimeCode.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfTimeCodeAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfTimeCodeAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfVecAttribute.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfVecAttribute.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfVersion.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfVersion.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfWav.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfWav.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfZip.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfZip.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\OpenEXR\ImfZipCompressor.cpp">
+    <ClCompile Include="openexr\src\lib\OpenEXR\ImfZipCompressor.cpp">
       <Filter>3rdparty\openexr\OpenEXR</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\IlmThread\IlmThread.cpp">
+    <ClCompile Include="openexr\src\lib\IlmThread\IlmThread.cpp">
       <Filter>3rdparty\openexr\IlmThread</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\IlmThread\IlmThreadPool.cpp">
+    <ClCompile Include="openexr\src\lib\IlmThread\IlmThreadPool.cpp">
       <Filter>3rdparty\openexr\IlmThread</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\IlmThread\IlmThreadSemaphore.cpp">
+    <ClCompile Include="openexr\src\lib\IlmThread\IlmThreadSemaphore.cpp">
       <Filter>3rdparty\openexr\IlmThread</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\IlmThread\IlmThreadSemaphoreWin32.cpp">
+    <ClCompile Include="openexr\src\lib\IlmThread\IlmThreadSemaphoreWin32.cpp">
       <Filter>3rdparty\openexr\IlmThread</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Imath\half.cpp">
+    <ClCompile Include="Imath\src\Imath\half.cpp">
       <Filter>3rdparty\openexr\Imath</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Imath\ImathColorAlgo.cpp">
+    <ClCompile Include="Imath\src\Imath\ImathColorAlgo.cpp">
       <Filter>3rdparty\openexr\Imath</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Imath\ImathFun.cpp">
+    <ClCompile Include="Imath\src\Imath\ImathFun.cpp">
       <Filter>3rdparty\openexr\Imath</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Imath\ImathMatrixAlgo.cpp">
+    <ClCompile Include="Imath\src\Imath\ImathMatrixAlgo.cpp">
       <Filter>3rdparty\openexr\Imath</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Imath\ImathRandom.cpp">
+    <ClCompile Include="Imath\src\Imath\ImathRandom.cpp">
       <Filter>3rdparty\openexr\Imath</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\openexr\Imath\toFloat.cpp">
+    <ClCompile Include="Imath\src\Imath\toFloat.cpp">
       <Filter>3rdparty\openexr\Imath</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\parallel.cpp">

@@ -1,3 +1,9 @@
 [submodule "opencv"]
 	path = opencv
 	url = https://github.com/reunanen/opencv
+[submodule "openexr"]
+	path = openexr
+	url = https://github.com/reunanen/openexr
+[submodule "Imath"]
+	path = Imath
+	url = https://github.com/reunanen/Imath
