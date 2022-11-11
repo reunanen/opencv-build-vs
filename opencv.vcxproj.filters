@@ -953,7 +953,7 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jutils.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\i386\jsimd.c">
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\x86_64\jsimd.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="src\init_libjpegturbo_simd.cpp" />
@@ -2229,9 +2229,6 @@
       <Filter>3rdparty\libjpeg-turbo\object files</Filter>
     </Object>
     <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimdcpu.asm.obj">
-      <Filter>3rdparty\libjpeg-turbo\object files</Filter>
-    </Object>
-    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimd.obj">
       <Filter>3rdparty\libjpeg-turbo\object files</Filter>
     </Object>
   </ItemGroup>

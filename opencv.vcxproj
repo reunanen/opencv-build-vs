@@ -924,9 +924,9 @@
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100</DisableSpecificWarnings>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\i386\jsimd.c">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4302;4311</DisableSpecificWarnings>
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4302;4311</DisableSpecificWarnings>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\x86_64\jsimd.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jutils.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
@@ -2600,7 +2600,6 @@
     <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquantf-sse2.asm.obj" />
     <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquanti-avx2.asm.obj" />
     <Object Include="vs\3rdparty\libjpeg-turbo\obj\jquanti-sse2.asm.obj" />
-    <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimd.obj" />
     <Object Include="vs\3rdparty\libjpeg-turbo\obj\jsimdcpu.asm.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
