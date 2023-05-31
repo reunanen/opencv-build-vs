@@ -7,3 +7,6 @@
 [submodule "Imath"]
 	path = Imath
 	url = https://github.com/reunanen/Imath
+[submodule "libdeflate"]
+	path = libdeflate
+	url = https://github.com/reunanen/libdeflate
