@@ -43,7 +43,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -69,7 +69,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -116,6 +116,52 @@
     <ClInclude Include="opencv\modules\imgproc\include\opencv2\imgproc\types_c.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="libdeflate\lib\adler32.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\libdeflate\adler32.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\libdeflate\adler32.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\crc32.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\libdeflate\crc32.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\libdeflate\crc32.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\deflate_compress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\deflate_decompress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\gzip_compress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\gzip_decompress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\libdeflate\utils.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\libdeflate\utils.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\x86\cpu_features.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\zlib_compress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\zlib_decompress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\ittnotify\src\ittnotify\ittnotify_static.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
@@ -1674,6 +1720,9 @@
     <ClCompile Include="Imath\src\Imath\ImathMatrixAlgo.cpp" />
     <ClCompile Include="Imath\src\Imath\ImathRandom.cpp" />
     <ClCompile Include="Imath\src\Imath\toFloat.cpp" />
+    <ClCompile Include="openexr\src\lib\OpenEXRCore\base.c" />
+    <ClCompile Include="openexr\src\lib\OpenEXRCore\compression.c" />
+    <ClCompile Include="openexr\src\lib\OpenEXRCore\memory.c" />
     <ClCompile Include="openexr\src\lib\OpenEXR\ImfAcesFile.cpp" />
     <ClCompile Include="openexr\src\lib\OpenEXR\ImfAttribute.cpp" />
     <ClCompile Include="openexr\src\lib\OpenEXR\ImfB44Compressor.cpp" />

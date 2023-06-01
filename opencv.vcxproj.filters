@@ -115,6 +115,15 @@
     <Filter Include="3rdparty\libjpeg-turbo\object files">
       <UniqueIdentifier>{640d70d8-43ae-4ed5-ae0b-e7a4431d6f14}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rdparty\openexr\OpenEXRCore">
+      <UniqueIdentifier>{1af20a35-2c82-416d-9734-3bbe838eaeed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\libdeflate">
+      <UniqueIdentifier>{4cfecb1b-eeef-4865-9137-fc8e18fca9a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\libdeflate\x86">
+      <UniqueIdentifier>{dda317a2-7840-4f71-a189-d03ee4058560}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv\modules\imgcodecs\src\grfmt_base.hpp">
@@ -2147,6 +2156,45 @@
     </ClCompile>
     <ClCompile Include="vs\modules\video\opencl_kernels_video.cpp">
       <Filter>opencv\opencv_video\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="openexr\src\lib\OpenEXRCore\base.c">
+      <Filter>3rdparty\openexr\OpenEXRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="openexr\src\lib\OpenEXRCore\compression.c">
+      <Filter>3rdparty\openexr\OpenEXRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="openexr\src\lib\OpenEXRCore\memory.c">
+      <Filter>3rdparty\openexr\OpenEXRCore</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\adler32.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\crc32.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\deflate_compress.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\deflate_decompress.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\gzip_compress.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\gzip_decompress.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\utils.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\zlib_compress.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\zlib_decompress.c">
+      <Filter>3rdparty\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="libdeflate\lib\x86\cpu_features.c">
+      <Filter>3rdparty\libdeflate\x86</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
