@@ -2057,8 +2057,8 @@
     <ClCompile Include="opencv\modules\core\src\ovx.cpp" />
     <ClCompile Include="opencv\modules\core\src\parallel.cpp" />
     <ClCompile Include="opencv\modules\core\src\parallel\parallel.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)__/core/src/parallel/parallel.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)__/core/src/parallel/parallel.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)core\parallel\parallel.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)core\parallel\parallel.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\parallel\parallel_openmp.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">HAVE_OPENMP;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -2079,8 +2079,8 @@
     <ClCompile Include="opencv\modules\core\src\sum.dispatch.cpp" />
     <ClCompile Include="opencv\modules\core\src\system.cpp" />
     <ClCompile Include="opencv\modules\core\src\tables.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)__/core/src/tables.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)__/core/src/tables.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)core\tables.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)core\tables.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\trace.cpp" />
     <ClCompile Include="opencv\modules\core\src\types.cpp" />
@@ -2117,8 +2117,8 @@
     <ClCompile Include="opencv\modules\imgcodecs\src\loadsave.cpp" />
     <ClCompile Include="opencv\modules\imgcodecs\src\rgbe.cpp" />
     <ClCompile Include="opencv\modules\imgcodecs\src\utils.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)__/imgcodecs/src/utils.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)__/imgcodecs/src/utils.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)imgcodecs\utils.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)imgcodecs\utils.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\accum.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\accum.dispatch.cpp" />
@@ -2178,14 +2178,14 @@
     <ClCompile Include="opencv\modules\imgproc\src\subdivision2d.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\sumpixels.dispatch.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\tables.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)__/imgproc/src/tables.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)__/imgproc/src/tables.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)imgproc\tables.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)imgproc\tables.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\templmatch.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\thresh.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\utils.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)__/imgproc/src/utils.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)__/imgproc/src/utils.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)imgproc\utils.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)imgproc\utils.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="opencv\modules\photo\src\align.cpp" />
     <ClCompile Include="opencv\modules\photo\src\calibrate.cpp" />
@@ -2196,8 +2196,8 @@
     <ClCompile Include="opencv\modules\photo\src\hdr_common.cpp" />
     <ClCompile Include="opencv\modules\photo\src\inpaint.cpp" />
     <ClCompile Include="opencv\modules\photo\src\merge.cpp">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)__/photo/src/merge.cpp.obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)__/photo/src/merge.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)photo\merge.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)photo\merge.obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="opencv\modules\photo\src\npr.cpp" />
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning.cpp" />
