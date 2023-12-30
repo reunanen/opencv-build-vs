@@ -1,5 +1,5 @@
 /* 
-// Copyright 1999-2018 Intel Corporation All Rights Reserved.
+// Copyright 1999-2019 Intel Corporation All Rights Reserved.
 // 
 // The source code, information and material ("Material") contained herein is
 // owned by Intel Corporation or its suppliers or licensors, and title
@@ -84,13 +84,17 @@ extern "C" {
 #define   ippCPUID_AVX512_4VNNIW   0x40000000   /* Intel(R) Advanced Vector Extensions DL enhanced word variable precision     */
 #define   ippCPUID_KNC             0x80000000   /* Intel(R) Xeon Phi(TM) Coprocessor                                           */
 #if defined( _WIN32 ) || defined ( _WIN64 )
- #define   ippCPUID_AVX512IFMA     0x100000000L   /* Intel(R) Advanced Vector Extensions IFMA (PMADD52) instruction set          */
- #define   ippCPUID_NOCHECK    0x8000000000000000L   /* Force ippSetCpuFeatures to set CPU features without check */
- #define   ippCPUID_GETINFO_A  0x616f666e69746567L   /* Force ipp_GetCpuFeatures to work as cpuid instruction */  
+ #define   ippCPUID_AVX512IFMA     0x100000000L   /* Intel(R) Advanced Vector Extensions IFMA (PMADD52) instruction set        */
+ #define   ippCPUID_NOCHECK    0x8000000000000000L   /* Force ippSetCpuFeatures to set CPU features without check              */
+ #define   ippCPUID_GETINFO_A  0x616f666e69746567L   /* Force ipp_GetCpuFeatures to work as cpuid instruction                  */  
+ #define   ippCPUID_AVX512VPOPCNTDQ 0x400000000L     /* Intel(R) Advanced Vector Extensions 512 VPOPCNTDQ instruction set      */
+ #define   ippCPUID_AVX512_BITALG   0x800000000L     /* Intel(R) Advanced Vector Extensions 512 BITALG instruction set         */
 #else
- #define   ippCPUID_AVX512IFMA     0x100000000LL   /* Intel(R) Advanced Vector Extensions IFMA (PMADD52) instruction set          */
+ #define   ippCPUID_AVX512IFMA     0x100000000LL   /* Intel(R) Advanced Vector Extensions IFMA (PMADD52) instruction set       */
  #define   ippCPUID_NOCHECK    0x8000000000000000LL
  #define   ippCPUID_GETINFO_A  0x616f666e69746567LL
+ #define   ippCPUID_AVX512VPOPCNTDQ 0x400000000LL    /* Intel(R) Advanced Vector Extensions 512 VPOPCNTDQ instruction set      */
+ #define   ippCPUID_AVX512_BITALG   0x800000000LL    /* Intel(R) Advanced Vector Extensions 512 BITALG instruction set         */
 #endif
 
 #endif /* IPP_CPU_FEATURES__ */

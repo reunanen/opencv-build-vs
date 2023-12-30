@@ -2,7 +2,7 @@
 /* This file must be kept up-to-date with needed substitutions from libtiff/tif_config.h.in. */
 
 /* Support CCITT Group 3 & 4 algorithms */
-/* #undef CCITT_SUPPORT */
+#define CCITT_SUPPORT 1
 
 /* Pick up YCbCr subsampling info from the JPEG data stream to support files
    lacking the tag (default enabled). */
