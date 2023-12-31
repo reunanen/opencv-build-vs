@@ -58,7 +58,7 @@
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
-      <PreprocessorDefinitions>CVAPI_EXPORTS;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>CVAPI_EXPORTS;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Lib>
@@ -86,7 +86,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>CVAPI_EXPORTS;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>CVAPI_EXPORTS;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
@@ -1712,6 +1712,24 @@
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level3</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Level3</WarningLevel>
     </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp" />
+    <ClCompile Include="opencv\modules\imgproc\src\corner.avx.cpp" />
+    <ClCompile Include="opencv\modules\videoio\src\backend_plugin.cpp" />
+    <ClCompile Include="opencv\modules\videoio\src\backend_static.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_feature.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_feature_set.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_mil_model.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_mil_state.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_model.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_sampler.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_sampler_algorithm.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_state_estimator.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracking_feature.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracking_online_mil.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_dasiamrpn.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_goturn.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_mil.cpp" />
     <ClCompile Include="openexr\src\lib\Iex\IexBaseExc.cpp" />
     <ClCompile Include="openexr\src\lib\Iex\IexMathFloatExc.cpp" />
     <ClCompile Include="openexr\src\lib\Iex\IexMathFpu.cpp" />
@@ -2221,7 +2239,6 @@
     <ClCompile Include="opencv\modules\video\src\bgfg_gaussmix2.cpp" />
     <ClCompile Include="opencv\modules\video\src\bgfg_KNN.cpp" />
     <ClCompile Include="opencv\modules\video\src\camshift.cpp" />
-    <ClCompile Include="opencv\modules\video\src\dis_flow.cpp" />
     <ClCompile Include="opencv\modules\video\src\kalman.cpp" />
     <ClCompile Include="opencv\modules\video\src\lkpyramid.cpp" />
     <ClCompile Include="opencv\modules\video\src\optflowgf.cpp" />
