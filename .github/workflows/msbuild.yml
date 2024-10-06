@@ -7,16 +7,15 @@ on:
 env:
   PROJECT_FILE: opencv.vcxproj
 
-  # Configuration type to build.
-  # You can convert this to a build matrix if you need coverage of multiple configuration types.
-  # https://docs.github.com/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
-  BUILD_CONFIGURATION: Release
-
 permissions:
   contents: read
 
 jobs:
   build:
+    strategy:
+      matrix:
+        build_configuration: ["Release", "Debug"]
+
     runs-on: windows-latest
 
     steps:
@@ -30,4 +29,4 @@ jobs:
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.PROJECT_FILE}}
+      run: msbuild /m /p:Configuration=${{matrix.build_configuration}} ${{env.PROJECT_FILE}}
