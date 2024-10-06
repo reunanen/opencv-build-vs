@@ -2253,6 +2253,9 @@
     <ClCompile Include="opencv\modules\imgproc\src\corner.avx.cpp">
       <Filter>opencv\opencv_imgproc\opt</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp">
+      <Filter>opencv\opencv_core\utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Object Include="vs\3rdparty\libjpeg-turbo\obj\jccolor-avx2.asm.obj">

@@ -2085,6 +2085,7 @@
     <ClCompile Include="opencv\modules\core\src\trace.cpp" />
     <ClCompile Include="opencv\modules\core\src\types.cpp" />
     <ClCompile Include="opencv\modules\core\src\umatrix.cpp" />
+    <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\filesystem.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\logtagconfigparser.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\logtagmanager.cpp" />
