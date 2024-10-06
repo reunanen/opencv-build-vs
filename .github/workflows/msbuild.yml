@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Get OpenCV itself
+    - name: Get submodules
       run: git submodule update --init
 
     - name: Add MSBuild to PATH
