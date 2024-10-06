@@ -2085,6 +2085,7 @@
     <ClCompile Include="opencv\modules\core\src\trace.cpp" />
     <ClCompile Include="opencv\modules\core\src\types.cpp" />
     <ClCompile Include="opencv\modules\core\src\umatrix.cpp" />
+    <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\filesystem.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\logtagconfigparser.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\logtagmanager.cpp" />
@@ -2138,6 +2139,7 @@
     <ClCompile Include="opencv\modules\imgproc\src\contours.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\convhull.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\corner.cpp" />
+    <ClCompile Include="opencv\modules\imgproc\src\corner.avx.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\cornersubpix.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\demosaicing.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\deriv.cpp" />
@@ -2175,6 +2177,7 @@
     <ClCompile Include="opencv\modules\imgproc\src\segmentation.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\shapedescr.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\smooth.dispatch.cpp" />
+    <ClCompile Include="opencv\modules\imgproc\src\spatialgradient.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\subdivision2d.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\sumpixels.dispatch.cpp" />
     <ClCompile Include="opencv\modules\imgproc\src\tables.cpp">
@@ -2203,6 +2206,8 @@
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning.cpp" />
     <ClCompile Include="opencv\modules\photo\src\seamless_cloning_impl.cpp" />
     <ClCompile Include="opencv\modules\photo\src\tonemap.cpp" />
+    <ClCompile Include="opencv\modules\videoio\src\backend_plugin.cpp" />
+    <ClCompile Include="opencv\modules\videoio\src\backend_static.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap_dshow.cpp" />
     <ClCompile Include="opencv\modules\videoio\src\cap_images.cpp" />
@@ -2221,6 +2226,20 @@
     <ClCompile Include="opencv\modules\video\src\optflowgf.cpp" />
     <ClCompile Include="opencv\modules\video\src\optical_flow_io.cpp" />
     <ClCompile Include="opencv\modules\video\src\variational_refinement.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_dasiamrpn.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_goturn.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_mil.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_feature.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_feature_set.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_mil_model.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_mil_state.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_model.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_sampler.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_sampler_algorithm.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_state_estimator.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracking_feature.cpp" />
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracking_online_mil.cpp" />
     <ClCompile Include="opencv\modules\world\src\world_init.cpp" />
     <ClCompile Include="src\init_libjpegturbo_simd.cpp" />
     <ClCompile Include="vs\3rdparty\ippicv\ippicv_win\iw\src\iw_core.c">

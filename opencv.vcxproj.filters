@@ -124,6 +124,12 @@
     <Filter Include="3rdparty\libdeflate\x86">
       <UniqueIdentifier>{dda317a2-7840-4f71-a189-d03ee4058560}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opencv\opencv_video\tracking">
+      <UniqueIdentifier>{f95e5c2b-4ecb-49f2-8259-0f5adfb7610e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_video\tracking\detail">
+      <UniqueIdentifier>{b5a776a6-0560-4476-87bb-22bfe02b5859}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv\modules\imgcodecs\src\grfmt_base.hpp">
@@ -1308,6 +1314,9 @@
     <ClCompile Include="opencv\modules\imgproc\src\smooth.dispatch.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\modules\imgproc\src\spatialgradient.cpp">
+      <Filter>opencv\opencv_imgproc</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\subdivision2d.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>
@@ -2195,6 +2204,60 @@
     </ClCompile>
     <ClCompile Include="libdeflate\lib\x86\cpu_features.c">
       <Filter>3rdparty\libdeflate\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker.cpp">
+      <Filter>opencv\opencv_video\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_dasiamrpn.cpp">
+      <Filter>opencv\opencv_video\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_mil.cpp">
+      <Filter>opencv\opencv_video\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\tracker_goturn.cpp">
+      <Filter>opencv\opencv_video\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_feature.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_feature_set.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_mil_model.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_mil_state.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_model.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_sampler.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_sampler_algorithm.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracker_state_estimator.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracking_feature.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\video\src\tracking\detail\tracking_online_mil.cpp">
+      <Filter>opencv\opencv_video\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\videoio\src\backend_plugin.cpp">
+      <Filter>opencv\opencv_videoio</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\videoio\src\backend_static.cpp">
+      <Filter>opencv\opencv_videoio</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\imgproc\src\corner.avx.cpp">
+      <Filter>opencv\opencv_imgproc\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp">
+      <Filter>opencv\opencv_core\utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
