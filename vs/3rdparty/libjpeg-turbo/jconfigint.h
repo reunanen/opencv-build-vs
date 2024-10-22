@@ -1,19 +1,14 @@
 /* libjpeg-turbo build number */
-#define BUILD  "opencv-4.5.4-dev-libjpeg-turbo"
+#define BUILD  "opencv-4.10.0-libjpeg-turbo"
+
+/* How to hide global symbols. */
+#define HIDDEN  
 
 /* Compiler's inline keyword */
 #undef inline
 
 /* How to obtain function inlining. */
-#ifndef INLINE
-#if defined(__GNUC__)
-#define INLINE inline __attribute__((always_inline))
-#elif defined(_MSC_VER)
-#define INLINE __forceinline
-#else
-#define INLINE
-#endif
-#endif
+#define INLINE  
 
 /* How to obtain thread-local storage */
 #define THREAD_LOCAL  
@@ -22,7 +17,7 @@
 #define PACKAGE_NAME  "OpenCV"
 
 /* Version number of package */
-#define VERSION  "2.1.2"
+#define VERSION  "3.0.3"
 
 /* The size of `size_t', as computed by sizeof. */
 #define SIZEOF_SIZE_T  8
@@ -49,4 +44,33 @@
 #endif
 #else
 #define FALLTHROUGH
+#endif
+
+/*
+ * Define BITS_IN_JSAMPLE as either
+ *   8   for 8-bit sample values (the usual setting)
+ *   12  for 12-bit sample values
+ * Only 8 and 12 are legal data precisions for lossy JPEG according to the
+ * JPEG standard, and the IJG code does not support anything else!
+ */
+
+#ifndef BITS_IN_JSAMPLE
+#define BITS_IN_JSAMPLE  8      /* use 8 or 12 */
+#endif
+
+#undef C_ARITH_CODING_SUPPORTED
+#undef D_ARITH_CODING_SUPPORTED
+#undef WITH_SIMD
+
+#if BITS_IN_JSAMPLE == 8
+
+/* Support arithmetic encoding */
+#define C_ARITH_CODING_SUPPORTED 1
+
+/* Support arithmetic decoding */
+#define D_ARITH_CODING_SUPPORTED 1
+
+/* Use accelerated SIMD routines. */
+#define WITH_SIMD 1
+
 #endif
