@@ -10,6 +10,15 @@
     <Filter Include="3rdparty\libjpeg-turbo">
       <UniqueIdentifier>{3bf253af-4f52-47b5-9a1d-e277d0fbd0f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rdparty\libjpeg-turbo\multi-precision support">
+      <UniqueIdentifier>{4f2b24e9-df68-4817-9c6d-000b2491600f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample">
+      <UniqueIdentifier>{24eab241-5e6e-446f-bfaa-cf5269df276a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample">
+      <UniqueIdentifier>{758b49db-b325-4a02-84d4-3e9a6a82d87e}</UniqueIdentifier>
+    </Filter>
     <Filter Include="3rdparty\libpng">
       <UniqueIdentifier>{ec08ea29-ad67-4b8c-81f7-cdf4bb8a0ef3}</UniqueIdentifier>
     </Filter>
@@ -54,6 +63,9 @@
     </Filter>
     <Filter Include="3rdparty\libwebp\utils">
       <UniqueIdentifier>{dd152daf-da89-4cd1-813d-a84ee54f94e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\libwebp\sharpyuv">
+      <UniqueIdentifier>{be6d5923-5b7d-4bed-a4db-dff21305c2fc}</UniqueIdentifier>
     </Filter>
     <Filter Include="3rdparty\libjasper">
       <UniqueIdentifier>{9a301ae0-4dad-443d-aef0-dac7adf284c6}</UniqueIdentifier>
@@ -293,9 +305,6 @@
     <ClCompile Include="opencv\modules\imgcodecs\src\exif.cpp">
       <Filter>opencv\opencv_imgcodecs\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="opencv\3rdparty\libtiff\snprintf.c">
-      <Filter>3rdparty\libtiff</Filter>
-    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libtiff\tif_aux.c">
       <Filter>3rdparty\libtiff</Filter>
     </ClCompile>
@@ -342,6 +351,9 @@
       <Filter>3rdparty\libtiff</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libtiff\tif_getimage.c">
+      <Filter>3rdparty\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libtiff\tif_hash_set.c">
       <Filter>3rdparty\libtiff</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libtiff\tif_jbig.c">
@@ -515,6 +527,9 @@
     <ClCompile Include="opencv\3rdparty\libwebp\src\dsp\lossless_sse2.c">
       <Filter>3rdparty\libwebp\dsp</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\src\dsp\lossless_sse41.c">
+      <Filter>3rdparty\libwebp\dsp</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libwebp\src\dsp\rescaler.c">
       <Filter>3rdparty\libwebp\dsp</Filter>
     </ClCompile>
@@ -644,6 +659,9 @@
     <ClCompile Include="opencv\3rdparty\libwebp\src\utils\huffman_utils.c">
       <Filter>3rdparty\libwebp\utils</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\src\utils\palette.c">
+      <Filter>3rdparty\libwebp\utils</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libwebp\src\utils\quant_levels_dec_utils.c">
       <Filter>3rdparty\libwebp\utils</Filter>
     </ClCompile>
@@ -661,6 +679,24 @@
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libwebp\src\utils\utils.c">
       <Filter>3rdparty\libwebp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\sharpyuv\sharpyuv.c">
+      <Filter>3rdparty\libwebp\sharpyuv</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\sharpyuv\sharpyuv_cpu.c">
+      <Filter>3rdparty\libwebp\sharpyuv</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\sharpyuv\sharpyuv_sse2.c">
+      <Filter>3rdparty\libwebp\sharpyuv</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\sharpyuv\sharpyuv_csp.c">
+      <Filter>3rdparty\libwebp\sharpyuv</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\sharpyuv\sharpyuv_dsp.c">
+      <Filter>3rdparty\libwebp\sharpyuv</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libwebp\sharpyuv\sharpyuv_gamma.c">
+      <Filter>3rdparty\libwebp\sharpyuv</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjasper\jas_cm.c">
       <Filter>3rdparty\libjasper</Filter>
@@ -842,10 +878,22 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcdctmgr.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcdiffct.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jchuff.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcicc.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcinit.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jclhuff.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jclossls.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jcmainct.c">
@@ -887,7 +935,13 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdatadst.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdatadst-tj.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdatasrc.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdatasrc-tj.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdcoefct.c">
@@ -899,10 +953,22 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jddctmgr.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jddiffct.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdhuff.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdicc.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdinput.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdlhuff.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdlossls.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jdmainct.c">
@@ -959,6 +1025,9 @@
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jmemnobs.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jpeg_nbits.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jquant1.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
@@ -966,6 +1035,9 @@
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\jutils.c">
+      <Filter>3rdparty\libjpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\transupp.c">
       <Filter>3rdparty\libjpeg-turbo</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\libjpeg-turbo\src\simd\x86_64\jsimd.c">
@@ -1216,6 +1288,18 @@
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\contours.cpp">
+      <Filter>opencv\opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\imgproc\src\contours_approx.cpp">
+      <Filter>opencv\opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\imgproc\src\contours_common.cpp">
+      <Filter>opencv\opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\imgproc\src\contours_link.cpp">
+      <Filter>opencv\opencv_imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\imgproc\src\contours_new.cpp">
       <Filter>opencv\opencv_imgproc</Filter>
     </ClCompile>
     <ClCompile Include="opencv\modules\imgproc\src\convhull.cpp">
@@ -1519,6 +1603,9 @@
       <Filter>3rdparty\openjpeg</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\openjpeg\openjp2\function_list.c">
+      <Filter>3rdparty\openjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\openjpeg\openjp2\ht_dec.c">
       <Filter>3rdparty\openjpeg</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\openjpeg\openjp2\image.c">
@@ -2258,6 +2345,159 @@
     </ClCompile>
     <ClCompile Include="opencv\modules\core\src\utils\datafile.cpp">
       <Filter>opencv\opencv_core\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcapistd-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jccoefct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jccolor-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcdctmgr-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcdiffct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jclossls-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcmainct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcprepct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcsample-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdapistd-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdcoefct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdcolor-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jddiffct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jddctmgr-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdlossls-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdmainct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdmerge-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdpostct-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdsample-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jfdctfst-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jfdctint-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctflt-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctfst-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctint-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctred-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jquant1-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jquant2-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jutils-12.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\12 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcapistd-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jccolor-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcdiffct-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jclossls-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcmainct-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcprepct-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcsample-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdapistd-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdcolor-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jddiffct-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdlossls-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdmainct-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdpostct-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jdsample-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jfdctfst-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jfdctint-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctflt-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctfst-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctint-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jidctred-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jquant1-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jquant2-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jutils-16.c">
+      <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
