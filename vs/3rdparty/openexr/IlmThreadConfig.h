@@ -16,13 +16,13 @@
 #define ILMTHREAD_HAVE_POSIX_SEMAPHORES 0
 
 //
-// Current internal library namepace name
+// Current internal library namespace name
 //
 #define ILMTHREAD_INTERNAL_NAMESPACE_CUSTOM 
-#define ILMTHREAD_INTERNAL_NAMESPACE IlmThread_opencv
+#define ILMTHREAD_INTERNAL_NAMESPACE IlmThread_opencv_build_vs
 
 //
-// Current public user namepace name
+// Current public user namespace name
 //
 
 #define ILMTHREAD_NAMESPACE_CUSTOM 

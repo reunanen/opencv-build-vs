@@ -13,13 +13,13 @@
 // C++ namespace configuration / options
 
 //
-// Current internal library namepace name
+// Current internal library namespace name
 //
 #define IEX_INTERNAL_NAMESPACE_CUSTOM 
-#define IEX_INTERNAL_NAMESPACE Iex_opencv
+#define IEX_INTERNAL_NAMESPACE Iex_opencv_build_vs
 
 //
-// Current public user namepace name
+// Current public user namespace name
 //
 
 #define IEX_NAMESPACE_CUSTOM 
