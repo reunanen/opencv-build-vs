@@ -43,7 +43,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\protobuf\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\dnn\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\dnn;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -58,7 +58,7 @@
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;CV_OCL4DNN=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Lib>
@@ -69,7 +69,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\protobuf\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\dnn\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\dnn;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -83,7 +83,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;CV_OCL4DNN=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
@@ -930,6 +930,64 @@
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
     </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any_lite.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\arena.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\arenastring.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor.pb.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor_database.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\dynamic_message.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\extension_set.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\extension_set_heavy.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_reflection.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4506</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4506</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\implicit_weak_message.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\io_win32.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\tokenizer.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\map.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\map_field.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4506</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4506</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\message.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\message_lite.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\parse_context.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\reflection_ops.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\repeated_ptr_field.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4506</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4506</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\bytestream.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\common.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4506</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4506</DisableSpecificWarnings>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/protobuf/common.cc.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/protobuf/common.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\int128.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\status.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\stringpiece.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\stringprintf.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\strutil.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\substitute.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\text_format.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\unknown_field_set.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wire_format.cc" />
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wire_format_lite.cc" />
     <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jcapistd-12.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
@@ -2297,6 +2355,288 @@
     <ClCompile Include="opencv\modules\core\src\utils\logtagmanager.cpp" />
     <ClCompile Include="opencv\modules\core\src\utils\samples.cpp" />
     <ClCompile Include="opencv\modules\core\src\va_intel.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\backend.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);DEBUG_POSTFIX=d</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);DEBUG_POSTFIX=d</PreprocessorDefinitions>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/dnn/backend.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/dnn/backend.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_io.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_shrinker.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_io.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\debug_utils.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\dnn.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\dnn_params.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\dnn_read.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\dnn_utils.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\graph_simplifier.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\halide_scheduler.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\ie_ngraph.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\init.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/batch_norm_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/batch_norm_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/convolution_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/convolution_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/elementwise_layers.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/elementwise_layers.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/eltwise_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/eltwise_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/fully_connected_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/fully_connected_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\layers_rvp052.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/pooling_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/pooling_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4267</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\quantization_utils.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\scale_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/scale_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/scale_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/int8layers/softmax_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/int8layers/softmax_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\accum_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\arg_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\attention_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\batch_norm_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/batch_norm_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/batch_norm_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\blank_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\concat_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\const_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\convolution_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/convolution_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/convolution_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4267</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\correlation_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\convolution.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\conv_depthwise.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\conv_winograd_f63.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\fast_gemm.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\fast_norm.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\softmax.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\crop_and_resize_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cumsum_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\detection_output_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\einsum_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4267</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\elementwise_layers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/elementwise_layers.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/elementwise_layers.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\eltwise_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/eltwise_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/eltwise_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\expand_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\flatten_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\flow_warp_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/fully_connected_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/fully_connected_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\gather_elements_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\gather_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\gemm_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\group_norm_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\instance_norm_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\layers_common.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\layer_norm.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\lrn_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\matmul_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\max_unpooling_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\mvn_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\nary_eltwise_layers.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\normalize_bbox_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\not_implemented_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\padding_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\permute_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4267</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4267</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\pooling_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/pooling_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/pooling_layer.cpp.obj</ObjectFileName>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4267</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\prior_box_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\proposal_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\recurrent_layers.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\reduce_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\region_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\reorg_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\reshape_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\resize_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\scale_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/scale_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/scale_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\scatterND_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\scatter_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\shuffle_channel_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\slice_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\softmax_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/softmax_layer.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/softmax_layer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\split_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layers\tile_layer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\layer_factory.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\legacy_backend.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\model.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\net_cann.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\net_impl.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_impl_backend.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\net_impl_fuse.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\net_openvino.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\net_quantization.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\nms.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\common.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/ocl4dnn/common.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/ocl4dnn/common.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\math_functions.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_conv_spatial.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_inner_product.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_graph_simplifier.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_cann.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_cuda.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_halide.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_inf_engine.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_timvx.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_vkcom.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\op_webnn.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\registry.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_io.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\tflite\tflite_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\torch\THDiskFile.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\torch\THFile.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\torch\THGeneral.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\torch\torch_importer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_1x1_fast_spv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_depthwise_3x3_spv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_depthwise_spv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_implicit_gemm_spv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\gemm_spv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\nary_eltwise_binary_forward_spv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\spv_shader.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\buffer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\command.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\context.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\fence.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\internal.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_base.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_conv.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_matmul.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_naryEltwise.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\pipeline.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\tensor.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\vulkan\vk_functions.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\vulkan\vk_loader.cpp" />
     <ClCompile Include="opencv\modules\flann\src\flann.cpp" />
     <ClCompile Include="opencv\modules\flann\src\miniflann.cpp" />
     <ClCompile Include="opencv\modules\highgui\src\backend.cpp" />
@@ -2719,6 +3059,63 @@
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=SSE2</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=SSE2</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="vs\modules\dnn\int8layers\layers_common.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/layers_common.avx2.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/layers_common.avx2.cpp.obj</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\int8layers\layers_common.avx512_skx.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/layers/layers_common.avx512_skx.cpp.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/layers/layers_common.avx512_skx.cpp.obj</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX512_SKX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX512_SKX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_block.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_block.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_depthwise.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_depthwise.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_winograd_f63.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_winograd_f63.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\fast_gemm_kernels.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\fast_gemm_kernels.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX2</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx512_skx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX512_SKX</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX512_SKX</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\opencl_kernels_dnn.cpp" />
     <ClCompile Include="vs\modules\imgproc\accum.avx.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);CV_CPU_DISPATCH_MODE=AVX</PreprocessorDefinitions>

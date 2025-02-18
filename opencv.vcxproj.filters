@@ -142,6 +142,69 @@
     <Filter Include="opencv\opencv_video\tracking\detail">
       <UniqueIdentifier>{b5a776a6-0560-4476-87bb-22bfe02b5859}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opencv\opencv_dnn">
+      <UniqueIdentifier>{f4ad6c6b-0cca-4457-9613-f62d250411f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\caffe">
+      <UniqueIdentifier>{7d5ecb7c-ba1f-4c3c-92e6-4233e84c31b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\cuda">
+      <UniqueIdentifier>{b17bb4be-bed0-4412-aef2-e4d238da8800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\darknet">
+      <UniqueIdentifier>{6e6555b3-19cf-41ba-86aa-945cb684c33f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\int8layers">
+      <UniqueIdentifier>{bd7d87c0-2c65-4c8e-99ec-4311a712b396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\layers">
+      <UniqueIdentifier>{f6d94120-3b6d-4a13-b19a-aa65fc0e25f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\layers\cpu_kernels">
+      <UniqueIdentifier>{3d873019-091b-43a2-80b2-5506f4bcbec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\ocl4dnn">
+      <UniqueIdentifier>{3fd622a2-511a-4fda-a415-5671192106d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\ocl4dnn\include">
+      <UniqueIdentifier>{bfeb2c32-4cc7-40ad-9631-d7af0d58ba76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\ocl4dnn\src">
+      <UniqueIdentifier>{6d9c32ab-6cb3-4e32-8517-3cdc7d9e32fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\onnx">
+      <UniqueIdentifier>{0f05b395-45ba-4da4-884c-761427d9cdc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\tensorflow">
+      <UniqueIdentifier>{534a0962-5e07-45e5-ba35-360aa1ea4841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\tflite">
+      <UniqueIdentifier>{29898adb-5a8c-4309-a8f6-bfa1be6b8bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\torch">
+      <UniqueIdentifier>{01a85930-c5db-48f2-a86f-9338ba82e40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\vkcom">
+      <UniqueIdentifier>{00a86295-558f-4f3a-887b-d7cf97ca4ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\vkcom\include">
+      <UniqueIdentifier>{658bf9cc-6516-4deb-a88a-41d8e6341ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\vkcom\shader">
+      <UniqueIdentifier>{4414b366-3ea3-4d10-9eb1-f497eb378350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\vkcom\src">
+      <UniqueIdentifier>{303653bd-82ab-41eb-9052-f60606017ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\vkcom\vulkan">
+      <UniqueIdentifier>{924c3378-9967-4398-82de-2d9fddf4c3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\protobuf">
+      <UniqueIdentifier>{96fed3f6-b606-4334-8297-d26df7c03391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\opt">
+      <UniqueIdentifier>{26c4c859-2c90-40cc-946e-9034687aca29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv\modules\imgcodecs\src\grfmt_base.hpp">
@@ -2133,6 +2196,48 @@
     <ClCompile Include="vs\modules\core\sum.sse2.cpp">
       <Filter>opencv\opencv_core\opt</Filter>
     </ClCompile>
+    <ClCompile Include="vs\modules\dnn\int8layers\layers_common.avx512_skx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_block.avx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_block.avx2.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_depthwise.avx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_depthwise.avx2.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_winograd_f63.avx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\conv_winograd_f63.avx2.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\fast_gemm_kernels.avx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\cpu_kernels\fast_gemm_kernels.avx2.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx2.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\int8layers\layers_common.avx2.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\layers\layers_common.avx512_skx.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
+    <ClCompile Include="vs\modules\dnn\opencl_kernels_dnn.cpp">
+      <Filter>opencv\opencv_dnn\opt</Filter>
+    </ClCompile>
     <ClCompile Include="vs\modules\imgproc\accum.avx.cpp">
       <Filter>opencv\opencv_imgproc\opt</Filter>
     </ClCompile>
@@ -2498,6 +2603,549 @@
     </ClCompile>
     <ClCompile Include="vs\3rdparty\libjpeg-turbo\multi-precision-support\jutils-16.c">
       <Filter>3rdparty\libjpeg-turbo\multi-precision support\16 bits per sample</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_importer.cpp">
+      <Filter>opencv\opencv_dnn\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_io.cpp">
+      <Filter>opencv\opencv_dnn\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_shrinker.cpp">
+      <Filter>opencv\opencv_dnn\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_importer.cpp">
+      <Filter>opencv\opencv_dnn\darknet</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_io.cpp">
+      <Filter>opencv\opencv_dnn\darknet</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\layers_rvp052.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\quantization_utils.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\scale_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <Filter>opencv\opencv_dnn\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\accum_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\arg_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\attention_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\batch_norm_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\blank_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\concat_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\const_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\convolution_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\correlation_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\crop_and_resize_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cumsum_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\detection_output_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\einsum_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\elementwise_layers.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\eltwise_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\expand_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\flatten_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\flow_warp_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\gather_elements_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\gather_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\gemm_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\group_norm_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\instance_norm_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\layer_norm.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\layers_common.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\lrn_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\matmul_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\max_unpooling_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\mvn_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\nary_eltwise_layers.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\normalize_bbox_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\not_implemented_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\padding_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\permute_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\pooling_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\prior_box_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\proposal_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\recurrent_layers.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\reduce_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\region_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\reorg_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\reshape_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\resize_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\scale_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\scatterND_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\scatter_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\shuffle_channel_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\slice_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\softmax_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\split_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\tile_layer.cpp">
+      <Filter>opencv\opencv_dnn\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\conv_depthwise.cpp">
+      <Filter>opencv\opencv_dnn\layers\cpu_kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\conv_winograd_f63.cpp">
+      <Filter>opencv\opencv_dnn\layers\cpu_kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\convolution.cpp">
+      <Filter>opencv\opencv_dnn\layers\cpu_kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\fast_gemm.cpp">
+      <Filter>opencv\opencv_dnn\layers\cpu_kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\fast_norm.cpp">
+      <Filter>opencv\opencv_dnn\layers\cpu_kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layers\cpu_kernels\softmax.cpp">
+      <Filter>opencv\opencv_dnn\layers\cpu_kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\common.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\math_functions.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_conv_spatial.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_inner_product.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp">
+      <Filter>opencv\opencv_dnn\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_graph_simplifier.cpp">
+      <Filter>opencv\opencv_dnn\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_importer.cpp">
+      <Filter>opencv\opencv_dnn\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp">
+      <Filter>opencv\opencv_dnn\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_importer.cpp">
+      <Filter>opencv\opencv_dnn\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_io.cpp">
+      <Filter>opencv\opencv_dnn\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\tflite\tflite_importer.cpp">
+      <Filter>opencv\opencv_dnn\tflite</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\THDiskFile.cpp">
+      <Filter>opencv\opencv_dnn\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\THFile.cpp">
+      <Filter>opencv\opencv_dnn\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\THGeneral.cpp">
+      <Filter>opencv\opencv_dnn\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\torch\torch_importer.cpp">
+      <Filter>opencv\opencv_dnn\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_1x1_fast_spv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_depthwise_3x3_spv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_depthwise_spv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\conv_implicit_gemm_spv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\gemm_spv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\nary_eltwise_binary_forward_spv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\shader\spv_shader.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\buffer.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\command.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\context.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\fence.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\internal.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_base.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_conv.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_matmul.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\op_naryEltwise.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\pipeline.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\src\tensor.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\vulkan\vk_functions.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\vkcom\vulkan\vk_loader.cpp">
+      <Filter>opencv\opencv_dnn\vkcom\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\backend.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\debug_utils.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\dnn.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\dnn_params.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\dnn_read.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\dnn_utils.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\graph_simplifier.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\halide_scheduler.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\ie_ngraph.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\init.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layer.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\layer_factory.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\legacy_backend.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\model.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_cann.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_impl.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_impl_backend.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_impl_fuse.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_openvino.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\net_quantization.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\nms.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_cann.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_cuda.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_halide.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_inf_engine.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_timvx.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_vkcom.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\op_webnn.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\registry.cpp">
+      <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\arena.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\arenastring.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\bytestream.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\coded_stream.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\common.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor.pb.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\descriptor_database.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\dynamic_message.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\extension_set.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\extension_set_heavy.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_reflection.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\generated_message_util.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\implicit_weak_message.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\int128.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\io_win32.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\map.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\map_field.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\message.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\message_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\parse_context.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\reflection_ops.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\repeated_field.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\repeated_ptr_field.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\status.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\stringpiece.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\stringprintf.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\strtod.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\strutil.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\stubs\substitute.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\text_format.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\tokenizer.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\unknown_field_set.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wire_format.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\wire_format_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc">
+      <Filter>3rdparty\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <Filter>3rdparty\protobuf</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
