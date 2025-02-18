@@ -205,6 +205,15 @@
     <Filter Include="opencv\opencv_dnn\opt">
       <UniqueIdentifier>{26c4c859-2c90-40cc-946e-9034687aca29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="opencv\opencv_dnn\caffe\protobuf">
+      <UniqueIdentifier>{4ba7c10f-08d5-4ab8-87f8-b92f33e82cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\tensorflow\protobuf">
+      <UniqueIdentifier>{c584d456-7fe7-47c3-8d56-660c22fd7702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv\opencv_dnn\onnx\protobuf">
+      <UniqueIdentifier>{ffb42085-b7e8-4398-b2ec-b65fb000fb8e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="opencv\modules\imgcodecs\src\grfmt_base.hpp">
@@ -3023,6 +3032,36 @@
     </ClCompile>
     <ClCompile Include="opencv\modules\dnn\src\registry.cpp">
       <Filter>opencv\opencv_dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\caffe\opencv-caffe.pb.cc">
+      <Filter>opencv\opencv_dnn\caffe\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\attr_value.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\function.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\graph.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\op_def.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\tensor.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\tensor_shape.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\types.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\versions.pb.cc">
+      <Filter>opencv\opencv_dnn\tensorflow\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\misc\onnx\opencv-onnx.pb.cc">
+      <Filter>opencv\opencv_dnn\onnx\protobuf</Filter>
     </ClCompile>
     <ClCompile Include="opencv\3rdparty\protobuf\src\google\protobuf\any.cc">
       <Filter>3rdparty\protobuf</Filter>

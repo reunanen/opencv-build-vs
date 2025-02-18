@@ -43,7 +43,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\protobuf\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\dnn\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\dnn;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\protobuf\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\dnn\include;$(ProjectDir)opencv\modules\dnn\misc\caffe;$(ProjectDir)opencv\modules\dnn\misc\onnx;$(ProjectDir)opencv\modules\dnn\misc\tensorflow;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\dnn;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -58,7 +58,7 @@
       <ProcessorNumber>8</ProcessorNumber>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;CV_OCL4DNN=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;CV_OCL4DNN=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG_WRAPPER;HAVE_PROTOBUF;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
@@ -70,7 +70,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\protobuf\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\dnn\include;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\dnn;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)opencv\3rdparty\libjasper;$(ProjectDir)opencv\3rdparty\libtiff;$(ProjectDir)opencv\3rdparty\libpng;$(ProjectDir)opencv\3rdparty\libwebp;$(ProjectDir)opencv\3rdparty\libjpeg-turbo\src;$(ProjectDir)opencv\3rdparty\protobuf\src;$(ProjectDir)opencv\3rdparty\zlib;$(ProjectDir)libdeflate;$(ProjectDir)openexr\src\lib\Iex;$(ProjectDir)openexr\src\lib\IlmThread;$(ProjectDir)Imath\src\Imath;$(ProjectDir)openexr\src\lib\OpenEXRCore;$(ProjectDir)openexr\src\lib\OpenEXR;$(ProjectDir)opencv\3rdparty\openjpeg\openjp2;$(ProjectDir)opencv\3rdparty\ittnotify\include;$(ProjectDir)opencv\3rdparty\include\opencl\1.2;$(ProjectDir)opencv\modules\core\include;$(ProjectDir)opencv\modules\calib3d\include;$(ProjectDir)opencv\modules\dnn\include;$(ProjectDir)opencv\modules\dnn\misc\caffe;$(ProjectDir)opencv\modules\dnn\misc\onnx;$(ProjectDir)opencv\modules\dnn\misc\tensorflow;$(ProjectDir)opencv\modules\features2d\include;$(ProjectDir)opencv\modules\flann\include;$(ProjectDir)opencv\modules\highgui\include;$(ProjectDir)opencv\modules\imgcodecs\include;$(ProjectDir)opencv\modules\imgproc\include;$(ProjectDir)opencv\modules\photo\include;$(ProjectDir)opencv\modules\video\include;$(ProjectDir)opencv\modules\videoio\include;$(ProjectDir)vs;$(ProjectDir)vs\3rdparty\ade\ade-0.1.2a\sources\ade\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\icv\include;$(ProjectDir)vs\3rdparty\ippicv\ippicv_win\iw\include;$(ProjectDir)vs\3rdparty\libjpeg-turbo;$(ProjectDir)vs\3rdparty\libtiff;$(ProjectDir)vs\3rdparty\openexr;$(ProjectDir)vs\3rdparty\openjpeg\openjp2;$(ProjectDir)vs\3rdparty\zlib;$(ProjectDir)vs\modules\core;$(ProjectDir)vs\modules\dnn;$(ProjectDir)vs\modules\highgui;$(ProjectDir)vs\modules\imgproc;$(ProjectDir)vs\modules\photo;$(ProjectDir)vs\modules\video</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -84,7 +84,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level2</WarningLevel>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;CV_OCL4DNN=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG_WRAPPER;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OPENCV_MODULE_IS_PART_OF_WORLD=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;CV_OCL4DNN=1;HAVE_WEBP;HAVE_IMGCODEC_HDR;HAVE_IMGCODEC_SUNRASTER;HAVE_IMGCODEC_PXM;HAVE_IMGCODEC_PFM;OPENCV_IMGCODECS_USE_OPENEXR;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_DSHOW;HAVE_MSMF;HAVE_FFMPEG_WRAPPER;HAVE_PROTOBUF;HAVE_WIN32UI;OPJ_STATIC;WITH_SIMD;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -2363,7 +2363,10 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)/src/dnn/backend.cpp.obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)/src/dnn/backend.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_importer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4305</DisableSpecificWarnings>
+    </ClCompile>
     <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_io.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\caffe\caffe_shrinker.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\darknet\darknet_importer.cpp" />
@@ -2598,8 +2601,14 @@
     <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp" />
-    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_graph_simplifier.cpp" />
-    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_graph_simplifier.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="opencv\modules\dnn\src\onnx\onnx_importer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244;4305</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244;4305</DisableSpecificWarnings>
+    </ClCompile>
     <ClCompile Include="opencv\modules\dnn\src\op_cann.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\op_cuda.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\op_halide.cpp" />
@@ -2609,7 +2618,10 @@
     <ClCompile Include="opencv\modules\dnn\src\op_webnn.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\registry.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp" />
-    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_importer.cpp" />
+    <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_importer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4244</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4244</DisableSpecificWarnings>
+    </ClCompile>
     <ClCompile Include="opencv\modules\dnn\src\tensorflow\tf_io.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\tflite\tflite_importer.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\torch\THDiskFile.cpp" />
@@ -2639,6 +2651,16 @@
     <ClCompile Include="opencv\modules\dnn\src\vkcom\src\tensor.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\vkcom\vulkan\vk_functions.cpp" />
     <ClCompile Include="opencv\modules\dnn\src\vkcom\vulkan\vk_loader.cpp" />
+    <ClCompile Include="opencv\modules\dnn\misc\caffe\opencv-caffe.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\onnx\opencv-onnx.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\attr_value.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\function.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\graph.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\op_def.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\tensor.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\tensor_shape.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\types.pb.cc" />
+    <ClCompile Include="opencv\modules\dnn\misc\tensorflow\versions.pb.cc" />
     <ClCompile Include="opencv\modules\flann\src\flann.cpp" />
     <ClCompile Include="opencv\modules\flann\src\miniflann.cpp" />
     <ClCompile Include="opencv\modules\highgui\src\backend.cpp" />
